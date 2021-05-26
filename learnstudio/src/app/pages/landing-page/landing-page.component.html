@@ -1,1 +1,29 @@
-<p>landing-page works!</p>
+<div class="wrapperLandingPage">
+  <div class="fixedHeader">
+    <div class="logo">
+      <img src="./assets/logo_txt.png">
+    </div>
+    <div class="wrapperAuthButton">
+      <button (click)="openRegisterLogin(false, true)" class="loginButton">Connexion</button>
+      <button (click)="openRegisterLogin(true, false)" class="registerButton">Enregistrement</button>
+    </div>
+  </div>
+  <div class="content">
+    content
+  </div>
+  <div class="footer">
+    <div>
+      ©Learn: tout droits reservés
+    </div>
+    <div>
+      Crédit: sernat_m, places_m, studer_j, bury_l, saiden_o, bardin_m
+    </div>
+  </div>
+  <div class="blurryBackground" *ngIf="login || register">
+    <div class="close" (click)="openRegisterLogin(false, false)">
+      fermer
+    </div>
+    <app-login *ngIf="login"></app-login>
+    <app-register *ngIf="register"></app-register>
+  </div>
+</div>

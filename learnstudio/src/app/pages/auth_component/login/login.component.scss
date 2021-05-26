@@ -1,0 +1,53 @@
+@import "src/styles";
+
+.blurryWrapperIn {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteWrapper {
+  background-color: $blurryWrapperBox;
+  width: 30vw;
+  min-width: 400px;
+  min-height: 600px;
+  border-radius: 25px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    color: $shadedBlue;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .lien {
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $shadedBlueLink;
+    }
+  }
+
+  .formulaire {
+    button {
+      background-color: $shadedBlue;
+      color: $shadedBlueTxt;
+      margin: 1em;
+      border-radius: 5px;
+      border: 0;
+      padding: 0.5em;
+      font-weight: bold;
+      font-size: small;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+    }
+  }
+}
