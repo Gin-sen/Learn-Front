@@ -2,12 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {LandingPageComponent} from './pages/landing-page/landing-page.component';
 import {ErrorPageComponent} from './pages/error-page/error-page.component';
+import {NavigationBarComponent} from './pages/logged-content/navigation-bar/navigation-bar.component';
+import {ProfileComponent} from './pages/logged-content/profile/profile.component';
 
 
 const routes: Routes = [
   {path: '', component: LandingPageComponent},
   {path: 'error', component: ErrorPageComponent},
-  {path: '**', component: ErrorPageComponent}
+  {path: 'learn', component: NavigationBarComponent},
+  {path: 'learn/profile', component: ProfileComponent},
+  {path: '**', component: ErrorPageComponent},
 ];
 
 @NgModule({

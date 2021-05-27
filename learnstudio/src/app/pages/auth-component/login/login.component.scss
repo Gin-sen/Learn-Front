@@ -15,15 +15,14 @@
   min-height: 600px;
   border-radius: 25px;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
 
   .title {
+    margin: 1em 0;
     color: $shadedBlue;
     font-weight: bold;
     font-size: 2em;
+    text-align: center;
   }
 
   .lien {
@@ -35,10 +34,15 @@
   }
 
   .formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
     button {
       background-color: $shadedBlue;
       color: $shadedBlueTxt;
-      margin: 1em;
+      margin: 1em 0;
       border-radius: 5px;
       border: 0;
       padding: 0.5em;
@@ -48,6 +52,13 @@
       -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
       cursor: pointer;
+    }
+
+    .example-form {
+      margin: 1vh 0;
+      color: $shadedBlue;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

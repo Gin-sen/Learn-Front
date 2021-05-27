@@ -1,13 +1,17 @@
 <div class="wrapperLandingPage">
-  <div class="fixedHeader">
+  <mat-toolbar class="toolbar">
     <div class="logo">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
       <img src="./assets/logo_txt.png">
     </div>
-    <div class="wrapperAuthButton">
+    <div class="iconWrapper">
       <button (click)="openRegisterLogin(false, true)" class="loginButton">Connexion</button>
-      <button (click)="openRegisterLogin(true, false)" class="registerButton">Enregistrement</button>
+      <button (click)="openRegisterLogin(true, false)" class="registerButton">Inscription</button>
     </div>
-  </div>
+  </mat-toolbar>
+
   <div class="content">
     content
   </div>
@@ -20,9 +24,9 @@
     </div>
   </div>
   <div class="blurryBackground" *ngIf="login || register">
-    <div class="close" (click)="openRegisterLogin(false, false)">
-      fermer
-    </div>
+    <button mat-mini-fab class="close" (click)="openRegisterLogin(false, false)">
+      <mat-icon>close</mat-icon>
+    </button>
     <app-login *ngIf="login"></app-login>
     <app-register *ngIf="register"></app-register>
   </div>
