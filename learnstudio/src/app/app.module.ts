@@ -19,6 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
 import { ProfileComponent } from './pages/logged-content/profile/profile.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -45,7 +46,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatIconModule,
     MatButtonModule,
     MatBadgeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
+import {UserService} from '../../../services/user.service';
 
 @Component({
   selector: 'app-register',
@@ -28,7 +29,7 @@ export class RegisterComponent implements OnInit {
   public hide: boolean;
 
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private userService: UserService) {
     this.hide = true;
   }
 
@@ -38,7 +39,13 @@ export class RegisterComponent implements OnInit {
   register(): void {
     // tslint:disable-next-line:max-line-length
     if (!this.lastNameFormControl.invalid && !this.firstNameFormControl.invalid && !this.emailFormControl.invalid && !this.passwordFormControl.invalid) {
-      this.router.navigate(['/'], {queryParams: { login: true }});
+      this.userService.userRegister(
+        this.firstNameFormControl.value,
+        this.lastNameFormControl.value,
+        this.emailFormControl.value,
+        this.passwordFormControl.value);
+
+      // this.router.navigate(['/'], {queryParams: { login: true }});
     }
   }
 
