@@ -20,6 +20,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import { ProfileComponent } from './pages/logged-content/profile/profile.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ExercisesListComponent } from './pages/logged-content/exercises-list/exercises-list.component';
 
 
 
@@ -33,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     LoginComponent,
     NavigationBarComponent,
-    ProfileComponent
+    ProfileComponent,
+    ExercisesListComponent
   ],
   imports: [
     BrowserModule,
