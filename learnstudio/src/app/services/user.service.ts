@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Router} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
 
 import { environment } from '../../environments/environment';
 
@@ -11,7 +10,7 @@ import { environment } from '../../environments/environment';
 export class UserService {
   public APIEndpoint = environment.APIEndpoint;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient) { }
 
   userRegister(firstName: string, lastName: string, email: string, password: string): void {
     const body = {
