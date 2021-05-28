@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #3D73A811;
 
     .boxTitle {
       color: $shadedBlueLink;
@@ -22,3 +23,38 @@
     }
   }
 }
+
+.listWrapper {
+  padding: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2em;
+
+  .exerciseBox {
+    max-width: 250px;
+    height: fit-content;
+
+    .buttonCenter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .exerciseBoxTitle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 230px;
+
+      .mat-icon {
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+

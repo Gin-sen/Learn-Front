@@ -6,11 +6,26 @@
         Liste des exercices
       </div>
       <div class="listWrapper">
-        <div class="exerciseBox">
-          <div class="exerciseTitle"></div>
-          <div class="exerciseImg"></div>
-          <div class="exerciseDescription"></div>
-        </div>
+        <mat-card class="exerciseBox" *ngFor="let exercise of exercises; let index = index">
+          <mat-card-header>
+            <mat-card-title class="exerciseBoxTitle">
+              <div>{{exercise.name}}</div>
+              <mat-icon (click)="openDialog(index)">add_circle_outline</mat-icon>
+            </mat-card-title>
+            <mat-card-subtitle >
+              <span *ngFor="let index of [0,1,2,3,4]">
+                <mat-icon *ngIf="exercise.maitrise > index + 0.5">star</mat-icon>
+                <mat-icon *ngIf="exercise.maitrise == index + 0.5">star_half</mat-icon>
+                <mat-icon *ngIf="exercise.maitrise < index + 0.5">star_border</mat-icon>
+              </span>
+              {{exercise.maitrise}}pt de maitrise
+            </mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{exercise.imageLink !== '' ? exercise.imageLink : './assets/image_not_found.png'}}" alt="{{exercise.imageAlt}}">
+          <mat-card-actions class="buttonCenter">
+            <button mat-button>ACCÈS À L'EXERCICE</button>
+          </mat-card-actions>
+        </mat-card>
       </div>
     </div>
   </div>

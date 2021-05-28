@@ -8,6 +8,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
@@ -21,6 +22,8 @@ import { ProfileComponent } from './pages/logged-content/profile/profile.compone
 import {ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ExercisesListComponent } from './pages/logged-content/exercises-list/exercises-list.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ExerciseDetailComponent } from './pages/logged-content/exercises-list/exercise-detail/exercise-detail.component';
 
 
 
@@ -35,7 +38,8 @@ import { ExercisesListComponent } from './pages/logged-content/exercises-list/ex
     LoginComponent,
     NavigationBarComponent,
     ProfileComponent,
-    ExercisesListComponent
+    ExercisesListComponent,
+    ExerciseDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,8 @@ import { ExercisesListComponent } from './pages/logged-content/exercises-list/ex
     MatBadgeModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatCardModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
