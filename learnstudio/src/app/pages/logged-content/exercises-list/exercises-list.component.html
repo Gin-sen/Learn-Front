@@ -10,7 +10,9 @@
           <mat-card-header>
             <mat-card-title class="exerciseBoxTitle">
               <div>{{exercise.name}}</div>
-              <mat-icon (click)="openDialog(index)">add_circle_outline</mat-icon>
+              <button mat-icon-button aria-label="Details" (click)="openDialog(index)">
+                <mat-icon>more_vert</mat-icon>
+              </button>
             </mat-card-title>
             <mat-card-subtitle >
               <span *ngFor="let index of [0,1,2,3,4]">
