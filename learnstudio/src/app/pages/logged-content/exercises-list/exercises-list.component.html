@@ -3,7 +3,7 @@
   <div class="pageWrapper">
     <div class="pageBox">
       <div class="boxTitle">
-        Liste des exercices
+        Liste des exercices du grand Duck mymen
       </div>
       <div class="listWrapper">
         <mat-card class="exerciseBox" *ngFor="let exercise of exercises; let index = index">
@@ -25,7 +25,7 @@
           </mat-card-header>
           <img mat-card-image src="{{exercise.imageLink !== '' ? exercise.imageLink : './assets/image_not_found.png'}}" alt="{{exercise.imageAlt}}">
           <mat-card-actions class="buttonCenter">
-            <button mat-button>ACCÈS À L'EXERCICE</button>
+            <button mat-button (click)="router.navigate(['learn/exercises/exo'])">ACCÈS À L'EXERCICE</button>
           </mat-card-actions>
         </mat-card>
       </div>

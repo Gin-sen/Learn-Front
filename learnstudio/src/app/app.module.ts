@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ExercisesListComponent } from './pages/logged-content/exercises-list/exercises-list.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ExerciseDetailComponent } from './pages/logged-content/exercises-list/exercise-detail/exercise-detail.component';
+import { OfficeAtmosphereComponent } from './pages/logged-content/office-atmosphere/office-atmosphere.component';
 
 
 
@@ -39,7 +40,8 @@ import { ExerciseDetailComponent } from './pages/logged-content/exercises-list/e
     NavigationBarComponent,
     ProfileComponent,
     ExercisesListComponent,
-    ExerciseDetailComponent
+    ExerciseDetailComponent,
+    OfficeAtmosphereComponent
   ],
   imports: [
     BrowserModule,

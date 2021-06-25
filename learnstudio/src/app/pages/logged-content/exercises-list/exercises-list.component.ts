@@ -3,6 +3,7 @@ import {ExercisePreview} from '../../../model/exercise-preview';
 import {newArray} from '@angular/compiler/src/util';
 import {MatDialog} from '@angular/material/dialog';
 import {ExerciseDetailComponent} from './exercise-detail/exercise-detail.component';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-exercises-list',
@@ -13,11 +14,14 @@ export class ExercisesListComponent implements OnInit {
 
   exercises: ExercisePreview[];
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, public router: Router) {
     this.exercises = [];
   }
 
+  // constructor(public router: Router) { }
+
   ngOnInit(): void {
+    this.exercises.push(new ExercisePreview(-1, 'Test sonore', 4.5, 'Un test qui permet de définir les possibilités de concentration', '', '', []));
     this.exercises.push(new ExercisePreview(0, 'Présentation', 4.5, 'Et Epigonus quidem amictu tenus philosophus, ut apparuit, prece frustra temptata, sulcatis lateribus mortisque metu admoto turpi confessione cogitatorum socium, quae nulla erant, fuisse firmavit cum nec vidisset quicquam nec audisset penitus expers forensium rerum; Eusebius vero obiecta fidentius negans, suspensus in eodem gradu constantiae stetit latrocinium illud esse, non iudicium clamans. ', '', '', []));
     this.exercises.push(new ExercisePreview(1, 'test', 3, 'description', '', '', []));
     this.exercises.push(new ExercisePreview(2, 'test', 1, 'description', '', '', []));
