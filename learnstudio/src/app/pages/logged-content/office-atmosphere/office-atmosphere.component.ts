@@ -11,9 +11,8 @@ export class OfficeAtmosphereComponent implements OnInit {
   constructor() { }
 
   play_pause = () => {
-    var audio = new Audio();
-    audio = document.getElementById("audio");
-    var pp_button = document.getElementsByClassName("pp_button")[0];
+    var audio = <HTMLAudioElement> document.getElementById("audio");
+    var pp_button = <HTMLElement> document.getElementsByClassName("pp_button")[0];
 
     if (audio != null && audio.paused) {
       audio.play();
@@ -21,9 +20,9 @@ export class OfficeAtmosphereComponent implements OnInit {
     }
     else {
       audio.pause()
-      var seconde = parseInt(audio.currentTime % 60);
-      var minute = parseInt((audio.currentTime / 60) % 60);
-      var my_form = document.getElementsByClassName("my_form")[0];
+      var seconde: number = audio.currentTime % 60;
+      var minute: number = audio.currentTime / 60 % 60;
+      var my_form = <HTMLElement> document.getElementsByClassName("my_form")[0];
       console.log(my_form);
       alert("Vous avez écouter le bruit pendant " + minute + ":" + seconde + "  Félicitation !");
       audio.currentTime = 0;
