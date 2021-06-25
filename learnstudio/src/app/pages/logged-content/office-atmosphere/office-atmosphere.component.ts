@@ -21,7 +21,9 @@ export class OfficeAtmosphereComponent implements OnInit {
     else {
       audio.pause()
       this.display = "none";
-      alert("Vous avez écouter le bruit pendant " + audio.currentTime + " secondes Félicitation !");
+      var seconde = parseInt(audio.currentTime % 60);
+      var minute = parseInt((audio.currentTime / 60) % 60);
+      alert("Vous avez écouter le bruit pendant " + minute + ":" + seconde + "  Félicitation !");
       audio.currentTime = 0;
       pp_button.innerHTML = "Relancer le test";
     }
