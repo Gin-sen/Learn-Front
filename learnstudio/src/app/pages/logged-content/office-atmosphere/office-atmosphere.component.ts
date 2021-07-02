@@ -10,32 +10,42 @@ export class OfficeAtmosphereComponent implements OnInit {
 
   constructor() { }
 
-  play_pause = () => {
-    var audio = <HTMLAudioElement> document.getElementById("audio");
-    var pp_button = <HTMLElement> document.getElementsByClassName("pp_button")[0];
+  audioToTime(audio: HTMLAudioElement): string {
+    // tslint:disable-next-line:no-bitwise
+    const currentTime = audio.currentTime | 0;
+    const minutes: any = '0' + Math.floor(currentTime / 60);
+    const seconds = '0' + (currentTime - minutes * 60);
+    const cur = minutes.substr(-2) + ':' + seconds.substr(-2);
+
+    return (cur);
+  }
+
+  playPause(): void {
+    const audio = document.getElementById('audio') as HTMLAudioElement;
+    const ppButton = document.getElementsByClassName('pp_button')[0] as HTMLElement;
 
     if (audio != null && audio.paused) {
       audio.play();
-      pp_button.innerHTML = "Mettre fin au test";
+      ppButton.innerHTML = 'Mettre fin au test';
     }
     else {
-      audio.pause()
-      var seconde: number = audio.currentTime % 60;
-      var minute: number = audio.currentTime / 60 % 60;
-      var my_form = <HTMLElement> document.getElementsByClassName("my_form")[0];
-      console.log(my_form);
-      alert("Vous avez écouter le bruit pendant " + minute + ":" + seconde + "  Félicitation !");
+      audio.pause();
+      console.log(this.audioToTime(audio));
+      const myForm = document.getElementsByClassName('my_form')[0] as HTMLElement;
+      console.log(myForm);
+      alert('Vous avez écouter le bruit pendant ' + this.audioToTime(audio) + '  Félicitation !');
       audio.currentTime = 0;
-      pp_button.style.display = "none";
-      my_form.style.display = "block";
+      ppButton.style.display = 'none';
+      myForm.style.display = 'block';
     }
-    audio.onended = function() {
-        alert("Vous êtes arrivé au bout de l'exercice Félicitation !");
-    }; 
+    // tslint:disable-next-line:only-arrow-functions
+    audio.onended = function(): void {
+      alert('Vous êtes arrivé au bout de l\'exercice Félicitation !');
+    };
   }
 
   ngOnInit(): void {
-    
+
   }
 
 }
