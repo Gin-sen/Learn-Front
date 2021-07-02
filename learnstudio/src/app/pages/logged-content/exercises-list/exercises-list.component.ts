@@ -18,7 +18,7 @@ export class ExercisesListComponent implements OnInit {
     // @ts-ignore
     this.exercises = [
       {
-        id: 0,
+        id: 1,
         title: 'Un bureau bruyant',
         description: 'Dans cet exercice, vous vous abituerez à travailler dans un contexte de travail en bureau. En effet, vous serez peut-être ammmené à devoir travailler dans le bruit, et cet exercice vous permet de vous y abituer progressivement tout en mesurant votre progression.',
         category: 'Sensibilité sensorielle',
@@ -29,7 +29,7 @@ export class ExercisesListComponent implements OnInit {
         maitrise: 1,
       },
       {
-        id: 1,
+        id: 2,
         title: 'Un sous-entendu agaçant',
         description: 'Dans cet exercice, vous allez devoir faire face à des sous-entendus, et réussir à en saisir au mieux le sens. En effet, peu importe votre contexte au travail, vous serez ammené a avoir des sous-entendus de la part de vos collègues, managers, ou employés. IL faut savoir y faire face.',
         category: 'Habiletés sociales',
@@ -40,7 +40,7 @@ export class ExercisesListComponent implements OnInit {
         maitrise: 1,
       },
       {
-        id: 2,
+        id: 3,
         title: 'Oui, très cher.e ?',
         description: 'Dans cet exercice, vous habituerez aux expressions soutenues qui sont parfois alambiquées. Dans un contexte professionnel avec une chaine hierarchique, il est important d\'être à l\'aise avec ces formulations.',
         category: 'Communication et langage',
@@ -51,7 +51,7 @@ export class ExercisesListComponent implements OnInit {
         maitrise: 1,
       },
       {
-        id: 3,
+        id: 4,
         title: 'Que dites-vous ?',
         description: 'Dans cet exercice, vous écouterez plusieurs messages vocaux, chacuns donnés avec des intonnations différentes. L\'objectif sera de comprendre quels sont les intentions de l\'interlocuteur en fonction de son ton.',
         category: 'Communication et langage',
@@ -62,7 +62,7 @@ export class ExercisesListComponent implements OnInit {
         maitrise: 1,
       },
       {
-        id: 4,
+        id: 5,
         title: 'C\'est de l\'art abstrait ?',
         description: 'Dans cet exercice, vous allez devoir interpréter des expressions figurées quotidiennement utilisées par de nombreuses personnes. Parce qu\'il ne faut pas manger quelqu\'un qui est chocolat !',
         category: 'Communication et langage',

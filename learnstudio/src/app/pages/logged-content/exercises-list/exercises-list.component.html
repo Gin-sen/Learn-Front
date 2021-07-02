@@ -25,7 +25,7 @@
           </mat-card-header>
           <img mat-card-image src="{{exercise.imageLink !== '' ? exercise.imageLink : './assets/image_not_found.png'}}" alt="{{exercise.imageAlt}}">
           <mat-card-actions class="buttonCenter">
-            <button mat-button (click)="router.navigate(['learn/exercises/exo'])">ACCÈS À L'EXERCICE</button>
+            <button mat-button (click)="router.navigate(['learn/exercise', exercise.id])">ACCÈS À L'EXERCICE</button>
           </mat-card-actions>
         </mat-card>
       </div>
