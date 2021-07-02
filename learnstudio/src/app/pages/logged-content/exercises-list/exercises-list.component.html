@@ -9,7 +9,7 @@
         <mat-card class="exerciseBox" *ngFor="let exercise of exercises; let index = index">
           <mat-card-header>
             <mat-card-title class="exerciseBoxTitle">
-              <div>{{exercise.name}}</div>
+              <div>{{exercise.title}}</div>
               <button mat-icon-button aria-label="Details" (click)="openDialog(index)">
                 <mat-icon>more_vert</mat-icon>
               </button>

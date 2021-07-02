@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <app-navigation-bar class="header"></app-navigation-bar>
+  <div class="pageWrapper">
+    <div class="pageBox">
+      <div class="boxTitle">
+        Exercice
+      </div>
+      <div *ngIf="exerciseId == 0">
+        Exercise non trouvé
+      </div>
+      <app-office-atmosphere *ngIf="exerciseId == 1"></app-office-atmosphere>
+    </div>
+  </div>
+</div>
