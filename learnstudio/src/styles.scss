@@ -1,13 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-$shadedBlue: #3D73A8;
+$shadedBlue: #58A8F5;
 $shadedBlueTxt: white;
-$shadedBlueLink: orange;
+$shadedBlueLink: #F59F70;
 
 $blurryWrapper: #00000050;
 $blurryWrapperBox: white;
 
 $headerHeight: 64px;
+
+@font-face {
+	font-family: "Eras";
+	font-weight: bold;
+	src: url("./assets/fonts/eras-demi-itc.ttf") format("ttf");
+}
 
 html, body {
   margin: 0;
@@ -20,24 +26,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .pageWrapper {
   height: calc(100vh - 96px);
-  padding: 2vh 2vh 0 2vh;
+  padding: 3vh 3vh 0 3vh;
+
   .pageBox {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     height: calc(96vh - 96px);
     padding: 1em;
-    border-radius: 25px;
+    // border-radius: 25px;
     overflow: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #3D73A811;
+    align-items: left;
+    // background-color: #3D73A811;
 
     .boxTitle {
       color: $shadedBlueLink;
-      font-size: x-large;
+      font-size: xx-large;
       font-weight: 400;
+      font-family: 'Roboto';
+      padding: 0.5em 1em;
     }
   }
 }

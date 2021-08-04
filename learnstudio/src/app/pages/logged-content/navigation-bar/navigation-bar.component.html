@@ -1,10 +1,27 @@
 <div class="navigationWrapper">
-    <mat-toolbar class="toolbar">
+  
+  <mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+      <div class="logo">
+        <img src="./assets/logo_txt_white.png"  height="150">
+      </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="navigationItems">
+      <div>
+        <a mat-button (click)="router.navigate(['learn/exercises'])"> Exercices </a>
+        <a mat-button (click)="router.navigate(['learn/profile'])"> Mon profil </a>
+        <a mat-button (click)="router.navigate(['learn/statistiques'])"> Mes statistiques </a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  
+    <!-- <mat-toolbar class="toolbar">
       <div class="logo">
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
           <mat-icon>menu</mat-icon>
         </button>
-        <img src="./assets/logo_txt.png">
+        <img src="./assets/logo_txt_white.png"  height="150">
       </div>
       <div class="iconWrapper">
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="router.navigate(['learn/exercises'])">
@@ -20,7 +37,7 @@
         <mat-icon>account_circle</mat-icon>
       </button>
       </div>
-    </mat-toolbar>
+    </mat-toolbar> -->
 
   <div>
 
