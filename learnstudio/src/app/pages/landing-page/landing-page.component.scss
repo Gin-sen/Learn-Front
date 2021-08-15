@@ -11,9 +11,13 @@ div{
     justify-content: space-around;
   }
 
+  .wrap{
+    flex-wrap: wrap;
+  }
+
   .padding-x{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .padding-2x{
@@ -54,6 +58,10 @@ div{
     font-size: 1.75rem;
     line-height: 2rem;
     padding-bottom: 3rem;
+  }
+
+  img{
+    height:min-content;
   }
 }
 
@@ -160,9 +168,10 @@ div{
     color: $blurryWrapperBox;
     z-index: 3;
     position: absolute;
+    top: 90px;
+    right: calc(65vh + 30px);
     cursor: pointer;
     background-color: $shadedBlueLink;
-    top: 25vh;
-    right: 34vw;
+
   }
 }
