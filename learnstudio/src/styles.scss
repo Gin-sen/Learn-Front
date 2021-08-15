@@ -10,9 +10,47 @@ $blurryWrapperBox: white;
 $headerHeight: 64px;
 
 @font-face {
-	font-family: "Eras";
+	font-family: 'Eras';
 	font-weight: bold;
 	src: url("./assets/fonts/eras-demi-itc.ttf") format("ttf");
+}
+
+h1{
+  font-family: 'Eras', 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-bottom: 3rem;
+  line-height: 3rem;
+}
+
+.mainCallToAction {
+  background-color: $shadedBlueLink;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 25px;
+  border: none;
+  font-size: medium;
+  font-weight: normal;
+}
+.callToAction {
+  background-color: $shadedBlueLink;
+  color: #fff;
+  padding: 0.75rem 0.75rem;
+  border-radius: 25px;
+  border: none;
+  font-size: medium;
+  font-weight: normal;
+}
+.callToAction2 {
+  background-color: white;
+  color: $shadedBlueLink;
+  padding: 0.7rem 0.7rem;
+  border-radius: 25px;
+  border: none;
+  font-size: medium;
+  font-weight: normal;
+  border: 3px solid $shadedBlueLink;
 }
 
 html, body {
@@ -21,7 +59,7 @@ html, body {
   font-family: "Gill Sans", sans-serif;
 }
 
-html, body { height: 100%; }
+html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .pageWrapper {

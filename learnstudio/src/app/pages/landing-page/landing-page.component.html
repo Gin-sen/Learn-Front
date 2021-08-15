@@ -13,21 +13,93 @@
   </mat-toolbar>
 
   <div class="content">
-    content
+    <div class="landing_header">
+      <h1>Développe ton potentiel <br/>en 20 minutes par jour</h1>
+      
+      <button (click)="openRegisterLogin(true, false)" class="mainCallToAction">Je m'inscris gratuitement</button>
+    </div>
+    <mat-card class="landingCard">
+      <mat-card-title>Découvre ta personnalité, améliore tes soft skills à ton rythme, et décroche le job de tes rêves !</mat-card-title>
+      <div>
+        
+        <div class="flex">
+          <div class="half">
+            <p>
+              Découvre Learn et développe tes compétences comportementales pour briller dans tes entretiens d'embauche, ou pour te sentir plus à l'aise dans un cadre social.<br/>
+              En moins de 20 minutes par jour, depuis ton ordinateur, réalise nos exercices et tu te sentiras plus à l'aise dans les lieux publics, mais aussi au boulot ou dans un échange avec ton chef. Tu gagneras en assurance et tu sauras faire face à toutes les situations !
+              <br/><br/>
+            </p>
+            <span class="title">Découvre maintenant ta personnalité, ou bien crée un compte Learn !</span>
+            <div class="flex padding-y">
+              <button class="callToAction2">Je teste ma personnalité</button>
+              <button class="callToAction">Je crée un compte Learn</button>
+            </div>
+          </div>
+          
+          <img src="../../../assets/landing-card.jpg" alt="Travaille comme tu le souhaites" class="half">
+        </div>
+      </div>
+    </mat-card>
+    
+    <div class="blue padding-2y">
+      <div class="flex padding-x">
+        <mat-card class="mat-card-3">
+          <mat-card-title>Un test de personnalité</mat-card-title>
+          <img src="../../../assets/landing-cards/card-1.png" alt="Test de personnalité" class="card-img">
+          <p>
+            Grâce à notre formulaire de personnalité, découvre tes points forts à valoriser et les points que tu devras plus travailler.
+          </p>
+        </mat-card>
+        <mat-card class="mat-card-3">
+          <mat-card-title>Des exercices qui évoluent</mat-card-title>
+          <img src="../../../assets/landing-cards/card-2.png" alt="Test de personnalité" class="card-img">
+          <p>
+            Progresse rapidement grâce à nos exercices évolutifs, qui te mettront à rude épreuve ! 
+          </p>
+        </mat-card>
+        <mat-card class="mat-card-3">
+          <mat-card-title>Un suivi personnalisé</mat-card-title>
+          <img src="../../../assets/landing-cards/card-3.png" alt="Test de personnalité" class="card-img">
+          <p>
+            Retrouve toutes les statistiques de ton profil, suis ta progression et repasse le test de personnalité, pour mesurer tes progrès. 
+          </p>
+        </mat-card>
+      </div>
+    </div>
+    <div class="flex padding-2x padding-y">
+      <div class="seventy">
+        <h2 class="title">Des exercices, mais pas que...</h2>
+        <p>
+          Learn est avant tout un état d'esprit. Celui de se donner les moyens de progresser pour réussir et s'épanouir dans la vie. S'inscrire chez Learn, c'est vouloir apprendre, mais aussi s'accépter pour mieux s'adpter. <br/>
+          Nos exercices, basés sur des tests de personnalité de recruteur, te préparent à de multiples situations, peu importe ton secteur d'activité. Cette attitude proactive et cette volonté, c'est ce que recherchent les recrutteurs. Learn vous propose de développer cet état d'esprit, pour briller en entretien et vous sentir plus à l'aise au travail. 
+        </p>
+      </div>
+
+      <div class="thirty">       
+        <h2 class="title">Une question ? </h2>
+        <p>
+          Vous souhaitez en savoir plus sur Learn, nos différentes solutions ou la méthode utilisée ? Contactez-nous directement par mail. 
+        </p>
+        <button (click)="openRegisterLogin(true, false)" class="callToAction"> Nous contacter </button>
+      </div>
+    </div>
+    
   </div>
+  
   <div class="footer">
     <div>
-      ©Learn: tout droits reservés
+      ©Learn: Tous droits reservés
     </div>
     <div>
-      Crédit: sernat_m, places_m, studer_j, bury_l, saiden_o, bardin_m
+      Crédit: serna_m, places_m, studer_j, bury_l, bardin_m
     </div>
   </div>
-  <div class="blurryBackground" *ngIf="login || register">
-    <button mat-mini-fab class="close" (click)="openRegisterLogin(false, false)">
-      <mat-icon>close</mat-icon>
-    </button>
-    <app-login *ngIf="login"></app-login>
-    <app-register *ngIf="register"></app-register>
-  </div>
+
+
+<div class="blurryBackground" *ngIf="login || register">
+  <button mat-mini-fab class="close" (click)="openRegisterLogin(false, false)">
+    <mat-icon>close</mat-icon>
+  </button>
+  <app-login *ngIf="login"></app-login>
+  <app-register *ngIf="register"></app-register>
 </div>
