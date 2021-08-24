@@ -3,23 +3,29 @@
   <div class="pageWrapper">
     <div class="pageBox">
       <div class="boxTitle">
-        Liste des exercices du grand Duck mymen
+        Liste des exercices
       </div>
       <div class="listWrapper">
         <mat-card class="exerciseBox" *ngFor="let exercise of exercises; let index = index">
           <mat-card-header>
             <mat-card-title class="exerciseBoxTitle">
-              <div>{{exercise.title}}</div>
-              <button mat-icon-button aria-label="Details" (click)="openDialog(index)">
-                <mat-icon>more_vert</mat-icon>
-              </button>
+                <div>{{exercise.title}}</div>
+                <div>
+                  <button mat-icon-button aria-label="Details" (click)="openDialog(index)">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                </div>
+              
             </mat-card-title>
             <mat-card-subtitle >
-              <span *ngFor="let index of [0,1,2,3,4]">
-                <mat-icon *ngIf="exercise.maitrise > index + 0.5">star</mat-icon>
-                <mat-icon *ngIf="exercise.maitrise == index + 0.5">star_half</mat-icon>
-                <mat-icon *ngIf="exercise.maitrise < index + 0.5">star_border</mat-icon>
-              </span>
+              <div>
+                <span *ngFor="let index of [0,1,2,3]">
+                  <mat-icon *ngIf="exercise.maitrise > index + 0.5">star</mat-icon>
+                  <mat-icon *ngIf="exercise.maitrise == index + 0.5">star_half</mat-icon>
+                  <mat-icon *ngIf="exercise.maitrise < index + 0.5">star_border</mat-icon>
+                </span>
+              </div>
+              
               {{exercise.maitrise}}pt de difficulté
             </mat-card-subtitle>
           </mat-card-header>
