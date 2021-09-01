@@ -1,1 +1,53 @@
-<p>register works!</p>
+<div class="blurryWrapperIn">
+  <div class="whiteWrapper">
+    <div class="title">
+      Inscription
+    </div>
+    <div class="formulaire">
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nom</mat-label>
+          <input type="text" matInput [formControl]="lastNameFormControl" placeholder="Ex. Morvan">
+          <mat-error *ngIf="lastNameFormControl.hasError('required')">
+            Le nom est requis
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Prénom</mat-label>
+          <input type="text" matInput [formControl]="firstNameFormControl" placeholder="Ex. Patrick">
+          <mat-error *ngIf="firstNameFormControl.hasError('required')">
+            Le prénom est requis
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Entrez une addresse mail valide
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            L'addresse mail est requise
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Mot de passe</mat-label>
+          <input matInput [formControl]="passwordFormControl" type="password" [type]="hide ? 'password' : 'text'">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          <mat-error *ngIf="passwordFormControl.hasError('required')">
+            Le mot de passe est requis
+          </mat-error>
+        </mat-form-field>
+      </form>
+      <button (click)="register()">S'inscrire</button>
+      <div class="lien">
+        <div>
+          <a href="/?register=true">Pas encore inscrit?</a>
+        </div>
+        <div>
+          <a href="/error">Mot de passe oublié?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

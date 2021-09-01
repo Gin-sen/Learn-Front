@@ -1,0 +1,46 @@
+@import "src/styles";
+
+.listWrapper {
+  padding: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2em;
+
+  .exerciseBox {
+    max-width: 280px;
+    height: fit-content;
+
+    .buttonCenter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .exerciseBoxTitle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 250px;
+    }
+
+    .exerciseDescription{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 250px;
+      padding-right: -1rem;
+    }
+
+    .mat-card-subtitle{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 250px;
+    }
+  }
+}

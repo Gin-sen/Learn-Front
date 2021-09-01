@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  emailFormControl = new FormControl('', [
+
+    Validators.required,
+    Validators.email,
+  ]);
+
+  passwordFormControl = new FormControl('', [
+    Validators.required
+  ]);
+
+  public hide: boolean;
+
+
+  constructor(private router: Router) {
+    this.hide = true;
+  }
 
   ngOnInit(): void {
+  }
+
+  connect(): void {
+    if (!this.emailFormControl.invalid && !this.passwordFormControl.invalid) {
+      // TODO request login -> this.emailFormControl.value, this.passwordFormControl.value
+      this.router.navigate(['/learn']);
+    }
+
+    // TODO drop following line
+    this.router.navigate(['/learn']);
   }
 
 }

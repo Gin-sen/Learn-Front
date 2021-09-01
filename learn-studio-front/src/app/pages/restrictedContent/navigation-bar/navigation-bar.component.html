@@ -1,0 +1,24 @@
+<div class="navigationWrapper">
+  <mat-toolbar class="toolbar">
+    <div class="logo">
+      <!--<button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>-->
+      <img src="./assets/logo_txt_white.png"  height="150">
+    </div>
+    <div class="iconWrapper">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="router.navigate(['learn/exercises'])">
+      <mat-icon>school</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>poll</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon matBadge="15" matBadgeColor="accent" matBadgePosition="below">notifications</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" (click)="router.navigate(['learn/profile'])">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    </div>
+  </mat-toolbar>
+</div>

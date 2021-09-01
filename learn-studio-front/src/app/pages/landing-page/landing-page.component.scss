@@ -1,0 +1,177 @@
+@import "src/styles";
+
+.wrapperLandingPage {
+  width: auto;
+  overflow: hidden;
+}
+
+div{
+  .flex{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .wrap{
+    flex-wrap: wrap;
+  }
+
+  .padding-x{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .padding-2x{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .padding-y{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .padding-2y{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .half{
+    width: 45%;
+  }
+
+  .thirty{
+    width: 30%;
+  }
+
+  .seventy{
+    width: 60%;
+  }
+}
+.landingCard{
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  top: -2rem;
+  padding: 3rem;
+
+  mat-card-title{
+    font-size: 1.75rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  img{
+    height:min-content;
+  }
+}
+
+.mat-card-3{
+  width: 25%;
+  text-align: center;
+
+  mat-card-title{
+    padding-bottom: 1.5rem;
+  }
+
+  .card-img{
+    width: 40%;
+  }
+}
+
+.title{
+  font-size: x-large;
+  line-height: 2rem;
+}
+
+.blue{
+  width: 100%;
+  background-image: url(../../../assets/blue_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.toolbar {
+  background-color: $shadedBlue;
+  color: $shadedBlueTxt;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+  .iconWrapper {
+    float: right;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .loginButton, .registerButton {
+    border-radius: 5px;
+    color: $shadedBlueTxt;
+    background-color: $shadedBlueLink;
+    border: 0;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: small;
+    margin-right: 1em;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+  }
+
+  .loginButton:hover, .registerButton:hover {
+    color: $shadedBlueLink;
+    background-color: $shadedBlueTxt;
+  }
+}
+
+
+.landing_header{
+  width: calc(100% - (2*8rem));
+  background-image: url(../../../assets/landing_picture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 8rem;
+}
+
+.footer {
+  background-color: $shadedBlue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5em;
+  color: $shadedBlueTxt;
+}
+
+.blurryBackground {
+  position: absolute;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $blurryWrapper;
+
+  div {
+    z-index: 2;
+  }
+
+  .close {
+    color: $blurryWrapperBox;
+    z-index: 3;
+    position: absolute;
+    top: 90px;
+    right: calc(65vh + 30px);
+    cursor: pointer;
+    background-color: $shadedBlueLink;
+
+  }
+}
