@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {FormControl, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 
@@ -8,6 +8,8 @@ import {Router} from "@angular/router";
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  // tslint:disable-next-line:no-output-native
+  @Output() close = new EventEmitter<boolean>();
 
   emailFormControl = new FormControl('', [
 

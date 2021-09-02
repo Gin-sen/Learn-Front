@@ -9,6 +9,7 @@
 }
 
 .whiteWrapper {
+  position: relative;
   background-color: $blurryWrapperBox;
   width: 30vw;
   min-width: 400px;
@@ -61,4 +62,15 @@
       flex-direction: column;
     }
   }
+}
+
+.close {
+  color: $blurryWrapperBox;
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  background-color: $shadedBlueLink;
 }

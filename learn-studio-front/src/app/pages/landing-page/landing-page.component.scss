@@ -154,24 +154,12 @@ div{
 }
 
 .blurryBackground {
-  position: absolute;
+  position: fixed;
   top:0;
   width: 100vw;
   height: 100vh;
   background-color: $blurryWrapper;
-
   div {
     z-index: 2;
-  }
-
-  .close {
-    color: $blurryWrapperBox;
-    z-index: 3;
-    position: absolute;
-    top: 90px;
-    right: calc(65vh + 30px);
-    cursor: pointer;
-    background-color: $shadedBlueLink;
-
   }
 }

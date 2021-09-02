@@ -7,16 +7,16 @@
       <img src="./assets/logo_txt_white.png" height="150">
     </div>
     <div class="iconWrapper">
-      <button (click)="openRegisterLogin(false, true)" class="loginButton">Connexion</button>
-      <button (click)="openRegisterLogin(true, false)" class="registerButton">Inscription</button>
-    </div>
+      <button (click)="click_login()" class="loginButton">Connexion</button>
+      <button (click)="click_register()" class="registerButton">Inscription</button>
+</div>
   </mat-toolbar>
 
   <div class="content">
     <div class="landing_header">
       <h1>Développe ton potentiel <br/>en 20 minutes par jour</h1>
 
-      <button (click)="openRegisterLogin(true, false)" class="mainCallToAction">Je m'inscris gratuitement</button>
+      <button (click)="click_register()" class="mainCallToAction">Je m'inscris gratuitement</button>
     </div>
     <mat-card class="landingCard">
       <mat-card-title>Découvre ta personnalité, améliore tes soft skills à ton rythme, et décroche le job de tes rêves !</mat-card-title>
@@ -80,7 +80,7 @@
         <p>
           Vous souhaitez en savoir plus sur Learn, nos différentes solutions ou la méthode utilisée ? Contactez-nous directement par mail.
         </p>
-        <button (click)="openRegisterLogin(true, false)" class="callToAction"> Nous contacter </button>
+        <button class="callToAction"> Nous contacter </button>
       </div>
     </div>
 
@@ -97,10 +97,7 @@
 
 
   <div class="blurryBackground" *ngIf="login || register">
-    <button mat-mini-fab class="close" (click)="openRegisterLogin(false, false)">
-      <mat-icon>close</mat-icon>
-    </button>
-    <app-login *ngIf="login"></app-login>
-    <app-register1 *ngIf="register"></app-register1>
+    <app-login *ngIf="login" (close)="click_login()"></app-login>
+    <app-register1 *ngIf="register" (close)="click_register()"></app-register1>
   </div>
 </div>

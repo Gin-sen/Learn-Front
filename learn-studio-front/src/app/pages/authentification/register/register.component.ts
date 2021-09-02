@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormControl, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
@@ -9,6 +9,8 @@ import {UserService} from "../../../services/user.service";
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
+  // tslint:disable-next-line:no-output-native
+  @Output() close = new EventEmitter<boolean>();
 
   userNameFormControl = new FormControl('', [
     Validators.required

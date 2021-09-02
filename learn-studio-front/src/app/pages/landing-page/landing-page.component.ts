@@ -27,14 +27,12 @@ export class LandingPageComponent implements OnInit {
     });
   }
 
-  openRegisterLogin(registerInput: boolean, loginInput: boolean): void {
-    if (registerInput) {
-      this.router.navigate(['/'], {queryParams: { register: !this.register }});
-    } else if (loginInput) {
-      this.router.navigate(['/'], {queryParams: { login: !this.login }});
-    } else {
-      this.router.navigate(['/']);
-    }
+  click_login(): void {
+    !this.login ? this.router.navigate(['/'], {queryParams: { login: true }}) : this.router.navigate(['/']);
+  }
+
+  click_register(): void {
+    !this.register ? this.router.navigate(['/'], {queryParams: { register: true }}) : this.router.navigate(['/']);
   }
 
 }
