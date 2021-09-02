@@ -47,6 +47,7 @@ import { ExercisesListComponent } from './pages/restrictedContent/exercises-list
 import { NavigationBarComponent } from './pages/restrictedContent/navigation-bar/navigation-bar.component';
 import { ProfileComponent } from './pages/restrictedContent/profile/profile.component';
 import { ExerciseDetailComponent } from './pages/restrictedContent/exercises-list/exercise-detail/exercise-detail.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ExerciseDetailComponent } from './pages/restrictedContent/exercises-lis
     ExerciseDetailComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -4,18 +4,20 @@ import {Router} from "@angular/router";
 import {UserService} from "../../../services/user.service";
 
 @Component({
-  selector: 'app-register',
+  selector: 'app-register1',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
 
-  lastNameFormControl = new FormControl('', [
+  userNameFormControl = new FormControl('', [
     Validators.required
   ]);
 
+  lastNameFormControl = new FormControl('', [
+  ]);
+
   firstNameFormControl = new FormControl('', [
-    Validators.required
   ]);
 
   emailFormControl = new FormControl('', [
@@ -24,7 +26,8 @@ export class RegisterComponent implements OnInit {
   ]);
 
   passwordFormControl = new FormControl('', [
-    Validators.required
+    Validators.required,
+    Validators.minLength(7)
   ]);
 
   public hide: boolean;
@@ -39,8 +42,9 @@ export class RegisterComponent implements OnInit {
 
   register(): void {
     // tslint:disable-next-line:max-line-length
-    if (!this.lastNameFormControl.invalid && !this.firstNameFormControl.invalid && !this.emailFormControl.invalid && !this.passwordFormControl.invalid) {
+    if (!this.lastNameFormControl.invalid && !this.firstNameFormControl.invalid && !this.emailFormControl.invalid && !this.passwordFormControl.invalid && !this.userNameFormControl.invalid) {
       this.userService.userRegister(
+        this.userNameFormControl.value,
         this.firstNameFormControl.value,
         this.lastNameFormControl.value,
         this.emailFormControl.value,

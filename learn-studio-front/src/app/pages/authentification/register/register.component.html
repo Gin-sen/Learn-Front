@@ -7,6 +7,13 @@
 
       <form class="example-form">
         <mat-form-field class="example-full-width">
+          <mat-label>Pseudo</mat-label>
+          <input type="text" matInput [formControl]="userNameFormControl" placeholder="Ex. Wolfer">
+          <mat-error *ngIf="userNameFormControl.hasError('required')">
+            Le nom est requis
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
           <mat-label>Nom</mat-label>
           <input type="text" matInput [formControl]="lastNameFormControl" placeholder="Ex. Morvan">
           <mat-error *ngIf="lastNameFormControl.hasError('required')">
@@ -36,6 +43,9 @@
           <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           <mat-error *ngIf="passwordFormControl.hasError('required')">
             Le mot de passe est requis
+          </mat-error>
+          <mat-error *ngIf="passwordFormControl.hasError('minlength')">
+            Le mot de passe doit faire un minimum de 7 caractères
           </mat-error>
         </mat-form-field>
       </form>

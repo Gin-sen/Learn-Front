@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  APIEndpoint: 'http://learn-studio-api.test:8181'
+  APIEndpoint: 'http://node:3000'
 };
 
 /*
