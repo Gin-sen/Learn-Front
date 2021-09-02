@@ -47,6 +47,7 @@ import { ExercisesListComponent } from './pages/restrictedContent/exercises-list
 import { NavigationBarComponent } from './pages/restrictedContent/navigation-bar/navigation-bar.component';
 import { ProfileComponent } from './pages/restrictedContent/profile/profile.component';
 import { ExerciseDetailComponent } from './pages/restrictedContent/exercises-list/exercise-detail/exercise-detail.component';
+import { ExerciseInstructionComponent } from './pages/restrictedContent/exercise/exercise-instruction/exercise-instruction.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { ExerciseDetailComponent } from './pages/restrictedContent/exercises-lis
     ExercisesListComponent,
     NavigationBarComponent,
     ProfileComponent,
-    ExerciseDetailComponent
+    ExerciseDetailComponent,
+    ExerciseInstructionComponent,
   ],
   imports: [
     BrowserModule,

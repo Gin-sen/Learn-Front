@@ -1,0 +1,135 @@
+[{
+    "exercice": {
+        "title": "Quel comportement adopter dans ces situations ?",
+        "instruction": "Dans ces questions, il vous sera demandé de vous imaginer dans un certain nombre de scénarios et de rôles différents. On vous présentera des situations et on vous demandera de sélectionner la réponse que vous pensez être «la plus» et «la moins» susceptible d'apporter à ces situations parmi une gamme d'options. Il est recommandé de lire toutes les réponses possibles avant de décider comment répondre.", 
+        "cas": [
+            {
+                "contexte": "Vous êtes un assistant des ressources humaines (RH) travaillant dans le service RH d'un hôpital très fréquenté. Votre rôle consiste à effectuer des tâches administratives pour soutenir les activités RH requises dans l'hopital. Vous organisez et soutenez le recrutement, réservez des cours de formation, fournissez un soutien de secrétariat lors d'enquêtes disciplinaires et tenez à jour les dossiers du personnel pour tout le personnel médical et non médical, y compris les informations sur les salaires et les conditions. Vous rapportez à l'un des deux directeurs des ressources humaines qui, à leur tour, relèvent du directeur des ressources humaines. Votre manager s'appelle Fiona Dupuis.",
+                "situations": [
+                    {
+                        "scenario":"Cela fait trois jours qu'un processus d'entrevue a eu lieu pour nommer un nouvel ophtalmologiste consultant pour l'hôpital. Ce consultant sera le plus haut responsable médical du service d'ophtalmologie et sera responsable de trois internes principaux, deux internes et deux agents internes – ce sont tous des médecins juniors. Les postes de consultant sont rarement disponibles car une fois que les gens obtiennent un tel poste, ils y restent souvent jusqu'à leur retraite. Cela est particulièrement vrai dans cet hôpital, car il est situé dans un endroit où il fait bon vivre et il y a beaucoup de concurrence pour obtenir un poste médical, sans parler d'un poste de consultant avec sa sécurité, son statut et sa rémunération généreuse. Deux candidats internes et un candidat externe ont été interviewés pour le poste et le rôle a été confié à l'un des candidats internes. La personne nommée était moins expérimentée, en termes d'années en tant que interne principal, que les deux autres candidats, mais elle était considérée comme étant plus « de haut vol », douée sur le plan académique et possédant des compétences de leadership plus impressionnantes que les deux autres. M. Brian Bowler, le candidat rejeté en interne, est venu à votre bureau ce matin et vous plaint amèrement de cette décision. C'est vous qui avez écrit les lettres informant les candidats de la décision. M. Bowler est en colère et se sent traité injustement car il a plus d'expérience que Vijay Singh, le candidat désigné.",
+                        "todo": "Passez en revue les réponses suivantes et indiquez celle que vous pensez être la réponse à la situation que vous seriez « la plus susceptible de faire » et la réponse à la situation que vous seriez « la moins susceptible de faire ».",
+                        "liste": [
+                            {   
+                                "proposition": "Dites à M. Bowler que le processus a été équitable et que l'hôpital doit s'assurer qu'il nomme la bonne personne pour le poste, et non celle qui existe depuis le plus longtemps.",
+                                "order": 3,
+                                "point": 0.2,
+                                "correction": "La troisième réponse la plus efficace. Bien que tout cela soit parfaitement vrai, c'est un peu insensible et vous risquez de vous aliéner M. Bowler et comme il est toujours employé à l'hôpital, cela peut ne pas être raisonnable.»."
+                            }, 
+                            {
+                                "proposition": "Dites que le jury d'entretien a estimé que M. Singh était meilleur sur le plan scolaire et avait de meilleures compétences en leadership et que la décision finale n'était pas basée uniquement sur l'expérience.",
+                                "order": 4,
+                                "point": 0,
+                                "correction": "La réponse la moins efficace. Puisque vous n'êtes qu'un assistant, ce n'est pas votre rôle de donner de tels commentaires à M. Bowler, ce qui peut être contre-productif. Vous devriez l'encourager à demander directement les commentaires des intervieweurs. En outre, M. Bowler doit recevoir une image complète de sa performance lors de l'entretien et des raisons pour lesquelles les intervieweurs ont estimé qu'ils ne lui offriraient pas le poste à cette occasion."
+                            },
+                            {
+                                "proposition": "Dites à M. Bowler que vous pouvez voir pourquoi il est déçu. Indiquez que le processus a été rigoureusement équitable et qu'il pourrait demander tous les détails de la raison de la décision et d'autres commentaires de développement de la part des recruteurs s'il le souhaitait.",
+                                "order": 1,
+                                "point": 1,
+                                "correction": "La réponse la plus efficace. Vous sympathisez avec M. Bowler mais ne soutenez pas sa vision négative du processus. Vous l'encouragez à demander plus d'informations et de commentaires sur les raisons pour lesquelles il n'a pas obtenu le poste, ce qui peut l'aider à se développer et à continuer à bien contribuer au service et à l'hôpital."
+                            }, 
+                            {
+                                "proposition": "Offrez-lui une tasse de thé et dites que vous pouvez comprendre pourquoi il est contrarié. Laissez-le vous plaindre un peu et sortez-le de son système.",
+                                "order": 2,
+                                "point": 0.50,
+                                "correction": "La deuxième réponse la plus efficace. Vous êtes sympathique et amical, même si vous ne l'aidez pas à « avancer ». Il existe également un risque qu'il interprète votre sympathie comme un soutien à son point de vue."
+                            }
+
+                        ]
+                    },
+                    {
+                        "scenario":"Fiona Dupuis vous a délégué un projet concernant la formation d'initiation du personnel non médical. Le cours a été dispensé en interne par Fiona et son collègue au cours des dernières années, mais maintenant son rôle est devenu plus chargé et le directeur des ressources humaines a autorisé la nomination d'un fournisseur externe pour dispenser le cours et actualiser le contenu du cours. Le projet que vous menez a consisté à lancer un appel d'offres auprès de divers fournisseurs de formation et à recevoir des offres des fournisseurs contenant des informations sur le contenu du cours, qui le dispenserait, la durée du cours, l'expertise de l'entreprise, le prix de conception et d'exécution le cours et d'autres informations pertinentes. Fiona vous a confié la tâche de présélectionner les candidats ; il y a 20 entreprises qui se sont présentées et Fiona veut une liste restreinte de cinq pour faire une présentation formelle. Elle vous a demandé de présélectionner les entreprises prestataires au cours des deux prochains jours.",
+                        "todo": "Passez en revue les réponses A à D suivantes et indiquez si vous pensez que la réponse est 1 – La réponse la plus efficace, 2 – La deuxième réponse la plus efficace, 3 – La troisième réponse la plus efficace ou 4 – La réponse la moins efficace. Vous ne pouvez attribuer chaque note qu'une seule fois.",
+                        "liste": [
+                            {
+                                "proposition": "Placez les 20 fournisseurs sur une grille et attribuez des points sur une échelle de 1 à 5 en fonction de chaque facteur sur lequel vous disposez d'informations (par exemple, une entreprise peut marquer « 1 » sur le prix mais « 5 » sur le niveau d'expérience de ses formateurs).",
+                                "order": 2,
+                                "point": 1,
+                                "correction": "La deuxième réponse la plus efficace. C'est une approche raisonnable, mais il vaut peut-être mieux éviter de perdre votre temps à passer au crible des centaines de candidatures inappropriées en passant du temps à rédiger l'annonce pour permettre aux candidats de s'auto-sélectionner."
+                            }, 
+                            {
+                                "proposition": "Classez les entreprises en fonction de leurs prix et présélectionnez les cinq offres les moins chères, car le NHS doit toujours être soucieux des coûts.",
+                                "order": 4,
+                                "point": 1,
+                                "correction": "La réponse la moins efficace. Le processus précédent n'a pas réussi à attirer et à nommer des candidats fidèles au Trust et au NHS ; un changement est nécessaire. Cependant, les grandes lignes du plan pourraient être récupérées, ne serait-ce qu'en termes de délais pour faire les choses."
+                            }, 
+                            {
+                                "proposition": "Demandez à Fiona et au directeur des ressources humaines leur point de vue sur les critères clés de présélection des prestataires et utilisez ces informations pour structurer votre prise de décision.",
+                                "order": 1,
+                                "point": 1,
+                                "correction": "La réponse la plus efficace. Vous gardez à l'esprit la date limite finale et les livrables, mais vous vous occupez également de certaines choses qui pourraient vous aider à atteindre votre mesure de réussite clé de « rétention »."
+                            }, 
+                            {
+                                "proposition": "Envoyez un e-mail à un contact de l'hôpital de la ville voisine qui a déjà fait ce genre de chose et demandez-lui comment présélectionner le prestataire",
+                                "order": 3,
+                                "point": 1,
+                                "correction": "La troisième réponse la plus efficace. Vous pouvez recevoir de bons conseils, mais demander cette aide pourrait avoir un impact sur le temps disponible pour placer les annonces, traiter les candidats et présélectionner pour respecter la date limite de l'entretien.) Cela entraînera également des coûts."
+                            }
+                        ]
+                    },
+                    {
+                        "scenario":"L'hôpital a récemment souffert d'un roulement élevé d'infirmières auxiliaires, beaucoup partant pour travailler à l'hôpital et à la clinique de réadaptation privés à la périphérie de la ville. Lors des entretiens de départ, les sortants ont déclaré qu'en partant, ils espèrent augmenter leur salaire. Certains des sortants ont également mentionné que les attractions de l'hôpital privé sont son emplacement pittoresque et sa vaste gamme d'installations pour le personnel, y compris l'utilisation d'une piscine intérieure. On vous a demandé de concevoir et de mener une campagne de recrutement pour attirer et nommer 10 nouvelles infirmières auxiliaires et infirmières auxiliaires stagiaires. L'une de vos mesures de succès sera le « pouvoir de rester » des nouvelles recrues. Vous disposez d'un délai de 4 semaines jusqu'à la date de déroulement des entretiens des candidats infirmiers auxiliaires.",
+                        "todo": "Passez en revue les réponses A à D suivantes et indiquez si vous pensez que la réponse est 1 – La réponse la plus efficace, 2 – La deuxième réponse la plus efficace, 3 – La troisième réponse la plus efficace ou 4 – La réponse la moins efficace. Vous ne pouvez attribuer chaque note qu'une seule fois.",
+                        "liste": [
+                            {
+                                "proposition": "Placez une annonce immédiatement dans tous les médias locaux pertinents et en ligne. Passez ensuite du temps à concevoir un processus de présélection qui identifiera les candidats avec le type de valeurs qui se traduira par une loyauté envers l'hôpital.",
+                                "order": 2,
+                                "point": 1,
+                                "correction": "La deuxième réponse la plus efficace. C'est une approche raisonnable, mais il vaut peut-être mieux éviter de perdre votre temps à passer au crible des centaines de candidatures inappropriées en passant du temps à rédiger l'annonce pour permettre aux candidats de s'auto-sélectionner."
+                            },  
+                            {
+                                "proposition": "Demandez à votre collègue de l'équipe des RH quel a été le processus la dernière fois que la Fiducie a recruté des infirmières auxiliaires et suivez ce plan.",
+                                "order": 4,
+                                "point": 1,
+                                "correction": "La réponse la moins efficace. Le processus précédent n'a pas réussi à attirer et à nommer des candidats fidèles au Trust et au NHS ; un changement est nécessaire. Cependant, les grandes lignes du plan pourraient être récupérées, ne serait-ce qu'en termes de délais pour faire les choses."
+                            }, 
+                            {
+                                "proposition": "Travaillez à partir de la date des entretiens pour déterminer quand vous devrez peut-être publier les messages. Utilisez le temps qui s'écoule pour utiliser votre jugement lors de la rédaction d'une annonce pour essayer d'attirer des personnes dont les valeurs signifient qu'elles sont plus susceptibles de rester fidèles au NHS.",
+                                "order": 1,
+                                "point": 1,
+                                "correction": "La réponse la plus efficace. Vous gardez à l'esprit la date limite finale et les livrables, mais vous vous occupez également de certaines choses qui pourraient vous aider à atteindre votre mesure de réussite clé de « rétention »."
+                            },
+                            {
+                                "proposition": "Demandez aux agences de recrutement locales des conseils sur la rédaction d'une annonce afin d'attirer les personnes les moins susceptibles de partir.",
+                                "order": 3,
+                                "point": 1,
+                                "correction": "The third most effective response. You may receive some good advice, howeverseeking this help could impact on the time available to place the adverts, process the applicants and shortlist to meet the interview date deadline.) This will also involve cost. "
+                            }
+                        ]
+                    },
+                    {
+                        "scenario":"La nouvelle formation d'intégration est opérationnelle et a été très bien accueillie par participants et chefs de service. Vous avez programmé tous les cours du 12 mois à l'avance et l'entreprise qui dispense la formation a peu de capacité disponible pour fournir cours supplémentaires. Le Trust a récemment nommé 8 nouvelles infirmières auxiliaires qui doivent toutes commencer au cours du mois prochain. Ce matin, vous avez reçu un appel du chef de Soins infirmiers, Sally O'Hara demande que les huit nouveaux assistants infirmiers débutants soient formation initiale dans les deux semaines suivant le début de leur emploi. Votre problème est que tout les cours d'initiation des 3 prochains mois sont complets. Vous avez expliqué cela à Sally, mais elle a insisté sur le fait que ces infirmières auxiliaires doivent recevoir immédiatement une bonne qualité l'intégration au Trust pour fidéliser l'organisation et, espérons-le, réduire le chiffre d'affaires parmi ce groupe. Vous avez dit à Sally que vous deviez examiner la situation plus en détail et que vous la rappellerait plus tard ce matin. Depuis lors, après avoir parlé à Fiona, la décision est que les infirmières auxiliaires ne nécessitent aucun traitement particulier et que vous les réserverez toutes les 8 sur les prochains cours disponibles dans 4 mois. Maintenant, vous devez transmettre cela à Sally.",
+                        "todo": "Passez en revue les réponses A à D suivantes et indiquez si vous pensez que la réponse est 1 – La réponse la plus efficace, 2 – La deuxième réponse la plus efficace, 3 – La troisième réponse la plus efficace ou 4 – La réponse la moins efficace . Vous ne pouvez attribuer chaque note qu'une seule fois.",
+                        "liste": [
+                            {
+                                "proposition": "Excusez-vous auprès de Sally pour le fait que vous ne pouvez pas intégrer son personnel au cours au cours des trois prochains mois. Offrez de surveiller les cours et informez-la immédiatement s'il y a des annulations et dites que son personnel sera en tête de liste pour toutes les places qui se libèrent.",
+                                "order": 1,
+                                "point": 1,
+                                "correction": "La réponse la plus efficace. Vous démontrez vraiment que vous vous souciez de Sally et de ses employés et que vous faites tout votre possible pour lui donner la formation qu'elle souhaite pour son personnel."
+                            },
+                            {
+                                "proposition": "Dites à Sally que son personnel n'est pas plus important que n'importe quel autre au Trust et qu'il devra être intégré aux cours lorsqu'il y aura des places dans quelques mois.",
+                                "order": 4,
+                                "point": 1,
+                                "correction": "La réponse la moins efficace. Vous risquez de vous aliéner un cadre supérieur."
+                            },
+                            {
+                                "proposition": "Excusez-vous auprès de Sally et dites que vous avez attribué des places à ses nouveaux débutants sur les premiers cours disponibles, expliquez que vous avez examiné tous les participants au cours au cours des trois prochains mois et que vous ne pouvez reprogrammer aucun d'entre eux.",
+                                "order": 2,
+                                "point": 1,
+                                "correction": "La deuxième réponse la plus efficace. Vous vous excusez et vous donnez aussi à Sally un compte rendu de ce que vous avez fait en réponse à sa demande, montrant que vous avez pris au sérieux"
+                            },
+                            {
+                                "proposition": "Excusez-vous auprès de Sally et expliquez qu'il n'y a pas de places disponibles. Suggérez-lui de faire elle-même des séances d'initiation en tête-à-tête avec les nouveaux arrivants.",
+                                "order": 3,
+                                "point": 1,
+                                "correction": "La troisième réponse la plus efficace. Vous vous excusez mais n'offrez aucune aide supplémentaire à Sally et augmentez sa charge de travail en même temps."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+                
+    }
+}]
