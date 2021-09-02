@@ -48,6 +48,8 @@ import { NavigationBarComponent } from './pages/restrictedContent/navigation-bar
 import { ProfileComponent } from './pages/restrictedContent/profile/profile.component';
 import { ExerciseDetailComponent } from './pages/restrictedContent/exercises-list/exercise-detail/exercise-detail.component';
 import {HttpClientModule} from "@angular/common/http";
+import { MiseEnSituationComponent } from './exercises/mise-en-situation/mise-en-situation.component';
+import { ExerciseInstructionComponent } from './pages/restrictedContent/exercise/exercise-instruction/exercise-instruction.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import {HttpClientModule} from "@angular/common/http";
     ExercisesListComponent,
     NavigationBarComponent,
     ProfileComponent,
-    ExerciseDetailComponent
+    ExerciseDetailComponent,
+    MiseEnSituationComponent,
+    ExerciseInstructionComponent
   ],
   imports: [
     HttpClientModule,

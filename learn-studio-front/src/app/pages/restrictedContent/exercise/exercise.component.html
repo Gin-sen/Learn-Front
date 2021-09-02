@@ -2,12 +2,10 @@
   <app-navigation-bar class="header"></app-navigation-bar>
   <div class="pageWrapper">
     <div class="pageBox">
-      <div class="boxTitle">
-        Exercice
-      </div>
       <div *ngIf="exerciseId == 0">
-        Exercise non trouvé
+        Exercice non trouvé
       </div>
+      <app-mise-en-situation *ngIf="exerciseId == 1"></app-mise-en-situation>
     </div>
   </div>
 </div>

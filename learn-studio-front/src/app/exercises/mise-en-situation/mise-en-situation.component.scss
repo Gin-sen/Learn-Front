@@ -1,0 +1,24 @@
+@import "src/styles";
+
+.flexContent{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.consigne{
+  color: grey;
+  font-style: italic;
+}
+
+.right-button{
+  float: right;
+}
+.custom-radio-label{
+  border: 1px solid black;
+  margin: 2rem;
+
+
+}
