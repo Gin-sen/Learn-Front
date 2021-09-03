@@ -12,10 +12,12 @@ export class PersonalityFormComponent implements OnInit {
   questionList = jsonForm.questions;
   userAnswer: number[];
   type: any;
+  result: boolean;
 
   constructor() {
     this.userAnswer = [];
     this.type = {};
+    this.result = false;
   }
 
   ngOnInit(): void {
@@ -35,6 +37,11 @@ export class PersonalityFormComponent implements OnInit {
       }
     });
     console.log(this.type);
+    this.result = true;
+  }
+
+  closeResult(){
+    this.result = false;
   }
 
 }

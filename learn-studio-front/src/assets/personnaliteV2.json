@@ -261,7 +261,7 @@
       ]
     },
     {
-      "intitule" : "Je me concentre habituellement plus sur l’ensemble d’une image que sur les petits détails de celle-ci.",
+      "intitule" : "Je me concentre habituellement plus sur l’ensemble d’une image que sur les petits détails de celle_ci.",
       "type" : "Attention aux détails",
       "answer": [
         {"point" : 1},
@@ -302,7 +302,7 @@
     },
     {
       "intitule" : "Les gens me disent souvent que ce que j’ai dit était impoli, même quand je pense moi que c’était poli.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 0},
         {"point" : 0},
@@ -312,7 +312,7 @@
     },
     {
       "intitule" : "J’apprécie le bavardage en société.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 1},
         {"point" : 1},
@@ -322,7 +322,7 @@
     },
     {
       "intitule" : "Quand je parle, il n’est pas toujours facile pour les autres de placer un mot.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 0},
         {"point" : 0},
@@ -332,7 +332,7 @@
     },
     {
       "intitule" : "Je remarque souvent que je ne sais pas comment entretenir une conversation.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 0},
         {"point" : 0},
@@ -342,7 +342,7 @@
     },
     {
       "intitule" : "Je trouve qu’il est facile de « lire entre les lignes » lorsque quelqu’un me parle.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 1},
         {"point" : 1},
@@ -352,7 +352,7 @@
     },
     {
       "intitule" : "Je sais m’en rendre compte quand mon interlocuteur s’ennuie.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 1},
         {"point" : 1},
@@ -362,7 +362,7 @@
     },
     {
       "intitule" : "Quand je parle au téléphone, je ne suis pas sûr(e) de savoir quand c’est à mon tour de parler.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 0},
         {"point" : 0},
@@ -372,7 +372,7 @@
     },
     {
       "intitule" : "Je suis souvent le(la) dernier(ère) à comprendre le sens d’une blague.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 0},
         {"point" : 0},
@@ -382,7 +382,7 @@
     },
     {
       "intitule" : "Je suis doué(e) pour le bavardage en société.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 1},
         {"point" : 1},
@@ -392,7 +392,7 @@
     },
     {
       "intitule" : "Les gens me disent souvent que répète continuellement les mêmes choses.",
-      "type" : "Communiction",
+      "type" : "Communication",
       "answer": [
         {"point" : 0},
         {"point" : 0},
@@ -504,25 +504,25 @@
   "moyennes" : [
     {
       "type" : "Habiletés sociales",
-      "valeur-aspie" : "7.5",
-      "valeur-NT" : "2.6"
+      "valeur_aspie" : 7.5,
+      "valeur_NT" : 2.6
     },
     {
-      "type" : "Flexibilité attentionnelle",
-      "valeur-aspie" : "8.0",
-      "valeur-NT" : "3.9"
+      "type" : "Fléxibilité attentionnelle",
+      "valeur_aspie" : 8.0,
+      "valeur_NT" : 3.9
     },{
       "type" : "Attention aux détails",
-      "valeur-aspie" : "6.7",
-      "valeur-NT" : "5.3"
+      "valeur_aspie" : 6.7,
+      "valeur_NT" : 5.3
     },{
       "type" : "Communication",
-      "valeur-aspie" : "7.2",
-      "valeur-NT" : "2.4"
+      "valeur_aspie" : 7.2,
+      "valeur_NT" : 2.4
     },{
       "type" : "Imagination",
-      "valeur-aspie" : "6.4",
-      "valeur-NT" : "2.3"
+      "valeur_aspie" : 6.4,
+      "valeur_NT" : 2.3
     }
   ]
 }

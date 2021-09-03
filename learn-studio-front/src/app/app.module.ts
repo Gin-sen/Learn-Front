@@ -34,6 +34,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 
+import { ChartsModule } from 'ng2-charts';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -51,6 +53,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { MiseEnSituationComponent } from './exercises/mise-en-situation/mise-en-situation.component';
 import { ExerciseInstructionComponent } from './pages/restrictedContent/exercise/exercise-instruction/exercise-instruction.component';
 import { PersonalityFormComponent } from './pages/personality-form/personality-form.component';
+import { PersonalityFormResultComponent } from './pages/personality-form/personality-form-result/personality-form-result.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +69,8 @@ import { PersonalityFormComponent } from './pages/personality-form/personality-f
     ExerciseDetailComponent,
     MiseEnSituationComponent,
     ExerciseInstructionComponent,
-    PersonalityFormComponent
+    PersonalityFormComponent,
+    PersonalityFormResultComponent
   ],
     imports: [
         HttpClientModule,
@@ -106,7 +110,8 @@ import { PersonalityFormComponent } from './pages/personality-form/personality-f
         MatTooltipModule,
         MatTreeModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        ChartsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

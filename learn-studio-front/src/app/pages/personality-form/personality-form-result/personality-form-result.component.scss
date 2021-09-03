@@ -1,0 +1,21 @@
+@import "src/styles";
+
+
+.blurryWrapperIn {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteWrapper {
+  position: relative;
+  background-color: $blurryWrapperBox;
+  width: 94vw;
+  height: 90vh;
+  min-width: 400px;
+  min-height: 600px;
+  border-radius: 25px;
+  padding: 1em;
+}

@@ -1,0 +1,15 @@
+<div class="blurryWrapperIn">
+  <div class="whiteWrapper">
+  <button mat-mini-fab class="close" (click)="close.emit()">
+    <mat-icon>close</mat-icon>
+  </button>
+    <div class="chart-wrapper">
+      <canvas [chartType]="radarChartType"
+              [datasets]="radarChartData"
+              [labels]="radarChartLabels"
+              [options]="radarChartOptions"
+              baseChart>
+      </canvas>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <div class="blurryWrapperIn">
-  <div class="whiteWrapper">
+  <div class="whiteWrapper" *ngIf="!result">
     <button mat-mini-fab class="close" (click)="close.emit()">
       <mat-icon>close</mat-icon>
     </button>
@@ -18,21 +18,24 @@
       </ol>
     </div>
 
-  <div class="scroll_wrapper">
-    <ol>
-      <li *ngFor="let question of questionList; let index = index" class="form_line">
-        <div>
-          {{index + 1 + ' . '}}{{question.intitule}}
-        </div>
-        <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[index]">
-
-          <div class="radio" *ngFor="let answer of question.answer; let index2 = index">
-            <mat-radio-button [value]="index2"></mat-radio-button>
+    <div class="scroll_wrapper">
+      <ol>
+        <li *ngFor="let question of questionList; let index = index" class="form_line">
+          <div>
+            {{index + 1 + ' . '}}{{question.intitule}}
           </div>
-        </mat-radio-group>
-      </li>
-    </ol>
-    <button class="button" (click)="printResult()">Obtenir mes résultats</button>
+          <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[index]">
+
+            <div class="radio" *ngFor="let answer of question.answer; let index2 = index">
+              <mat-radio-button [value]="index2"></mat-radio-button>
+            </div>
+          </mat-radio-group>
+        </li>
+      </ol>
+      <button class="button" (click)="printResult()">Obtenir mes résultats</button>
+    </div>
   </div>
-</div>
+  <div *ngIf="result">
+    <app-personality-form-result (close)="closeResult()" [result]="type"></app-personality-form-result>
+  </div>
 </div>
