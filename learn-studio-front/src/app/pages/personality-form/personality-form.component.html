@@ -20,19 +20,19 @@
 
   <div class="scroll_wrapper">
     <ol>
-      <li *ngFor="let question of questionList" class="form_line">
+      <li *ngFor="let question of questionList; let index = index" class="form_line">
         <div>
-          {{question.intitule}}
+          {{index + 1 + ' . '}}{{question.intitule}}
         </div>
-        <mat-radio-group aria-label="Select an option" class="radio_button_wrapper">
-          <div class="radio"><mat-radio-button value="1"></mat-radio-button></div>
-          <div class="radio"><mat-radio-button value="2"></mat-radio-button></div>
-          <div class="radio"><mat-radio-button value="3"></mat-radio-button></div>
-          <div class="radio"><mat-radio-button value="4"></mat-radio-button></div>
+        <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[index]">
+
+          <div class="radio" *ngFor="let answer of question.answer; let index2 = index">
+            <mat-radio-button [value]="index2"></mat-radio-button>
+          </div>
         </mat-radio-group>
       </li>
     </ol>
-    <button class="button">Obtenir mes résultats</button>
+    <button class="button" (click)="printResult()">Obtenir mes résultats</button>
   </div>
 </div>
 </div>

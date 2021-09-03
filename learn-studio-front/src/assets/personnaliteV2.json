@@ -1,428 +1,528 @@
 {
-    "questions" : [
-        {
-            "intitule" : "Je préfère réaliser des activités avec d’autres personnes plutôt que seul(e).",
-            "type" : "Habiletés sociales",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je trouve les situations de la vie en société faciles.",
-            "type" : "Habiletés sociales",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je préfèrerais aller dans une bibliothèque plutôt qu’à une fête.",
-            "type" : "Habiletés sociales",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je suis plus facilement attiré(e) par les gens que par les objets.",
-            "type" : "Habiletés sociales",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je trouve qu’il est difficile de se faire de nouveaux amis.",
-            "type" : "Habiletés sociales",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je trouve qu’il est facile de décoder ce que les autres pensent ou ressentent juste en regardant leur visage.",
-            "type" : "Habiletés sociales",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "J’aime les événements sociaux.",
-            "type" : "Habiletés sociales",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je trouve qu’il est difficile de décoder les intentions des autres.",
-            "type" : "Habiletés sociales",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "J’aime rencontrer de nouvelles personnes.",
-            "type" : "Habiletés sociales",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je suis une personne qui a le sens de la diplomatie.",
-            "type" : "Habiletés sociales",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je préfère tout faire continuellement de la même manière.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je suis fréquemment tellement absorbé(e) par une chose que je perds tout le reste de vue.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Au sein d’un groupe, je peux facilement suivre les conversations de plusieurs personnes à la fois.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "J’ai tendance à avoir des centres d’intérêt très importants. Je me tracasse lorsque je ne peux m’y consacrer.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Cela ne me dérange pas si mes habitudes quotidiennes sont perturbées.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je trouve qu’il est facile de faire plus d’une chose à la fois.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "J’aime faire les choses de manière spontanée.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Si je suis interrompu(e), je peux facilement revenir à ce que j’étais en train de faire.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "J’aime planifier avec soin toute activité à laquelle je participe.",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Les nouvelles situations me rendent anxieux(se).",
-            "type" : "Fléxibilité attentionnelle",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Mon attention est souvent attirée par des bruits discrets que les autres ne remarquent pas.",
-            "type" : "Attention aux détails",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je fais habituellement attention aux numéros de plaques d’immatriculation ou à d’autres types d’informations de ce genre.",
-            "type" : "Attention aux détails",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je suis fasciné(e) par les dates.",
-            "type" : "Attention aux détails",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "J’ai tendance à remarquer certains détails que les autres ne voient pas.",
-            "type" : "Attention aux détails",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je suis fasciné(e) par les chiffres.",
-            "type" : "Attention aux détails",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je remarque sans cesse des schémas réguliers dans les choses qui m’entourent.",
-            "type" : "Attention aux détails",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je me concentre habituellement plus sur l’ensemble d’une image que sur les petits détails de celle-ci.",
-            "type" : "Attention aux détails",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je ne suis pas très doué(e) pour me souvenir des numéros de téléphone.",
-            "type" : "Attention aux détails",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je ne remarque habituellement pas les petits changements dans une situation ou dans l’apparence de quelqu’un.",
-            "type" : "Attention aux détails",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je ne suis pas très doué(e) pour me souvenir des dates de naissance des gens.",
-            "type" : "Attention aux détails",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Les gens me disent souvent que ce que j’ai dit était impoli, même quand je pense moi que c’était poli.",
-            "type" : "Communiction",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "J’apprécie le bavardage en société.",
-            "type" : "Communiction",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Quand je parle, il n’est pas toujours facile pour les autres de placer un mot.",
-            "type" : "Communiction",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je remarque souvent que je ne sais pas comment entretenir une conversation.",
-            "type" : "Communiction",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je trouve qu’il est facile de « lire entre les lignes » lorsque quelqu’un me parle.",
-            "type" : "Communiction",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je sais m’en rendre compte quand mon interlocuteur s’ennuie.",
-            "type" : "Communiction",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Quand je parle au téléphone, je ne suis pas sûr(e) de savoir quand c’est à mon tour de parler.",
-            "type" : "Communiction",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je suis souvent le(la) dernier(ère) à comprendre le sens d’une blague.",
-            "type" : "Communiction",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je suis doué(e) pour le bavardage en société.",
-            "type" : "Communiction",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Les gens me disent souvent que répète continuellement les mêmes choses.",
-            "type" : "Communiction",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Quand j’essaye d’imaginer quelque chose, il est très facile de m’en représenter une image mentalement",
-            "type" : "Imagination",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Quand je lis une histoire, je peux facilement imaginer à quoi les personnages pourraient ressembler.",
-            "type" : "Imagination",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Je trouve facile d’inventer des histoires.",
-            "type" : "Imagination",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Quand je lis une histoire, je trouve qu’il est difficile de me représenter les intentions des personnages.",
-            "type" : "Imagination",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : " Je n’aime pas particulièrement lire des romans.",
-            "type" : "Imagination",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je préfèrerais aller au théâtre qu’au musée.",
-            "type" : "Imagination",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "Quand j’étais enfant, j’aimais habituellement jouer à des jeux de rôle avec les autres.",
-            "type" : "Imagination",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        },
-        {
-            "intitule" : "J’aime collectionner des informations sur des catégories de choses (types de voitures, d’oiseaux, de trains, de plantes, ...).",
-            "type" : "Imagination",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je trouve qu’il est difficile de s’imaginer dans la peau d’un autre.",
-            "type" : "Imagination",
-            "choix1" : "0",
-            "choix2" : "0",
-            "choix3" : "1",
-            "choix4" : "1"
-        },
-        {
-            "intitule" : "Je trouve qu’il est très facile de jouer à des jeux de rôle avec des enfants.",
-            "type" : "Imagination",
-            "choix1" : "1",
-            "choix2" : "1",
-            "choix3" : "0",
-            "choix4" : "0"
-        }
-    ],
-    "moyennes" : [
-        {
-            "type" : "Habiletés sociales",
-            "valeur-aspie" : "7.5",
-            "valeur-NT" : "2.6"
-        },
-        {
-            "type" : "Flexibilité attentionnelle",
-            "valeur-aspie" : "8.0",
-            "valeur-NT" : "3.9"
-        },{
-            "type" : "Attention aux détails",
-            "valeur-aspie" : "6.7",
-            "valeur-NT" : "5.3"
-        },{
-            "type" : "Communication",
-            "valeur-aspie" : "7.2",
-            "valeur-NT" : "2.4"
-        },{
-            "type" : "Imagination",
-            "valeur-aspie" : "6.4",
-            "valeur-NT" : "2.3"
-        }
-    ]
+  "questions" : [
+    {
+      "intitule" : "Je préfère réaliser des activités avec d’autres personnes plutôt que seul(e).",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je trouve les situations de la vie en société faciles.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je préfèrerais aller dans une bibliothèque plutôt qu’à une fête.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je suis plus facilement attiré(e) par les gens que par les objets.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je trouve qu’il est difficile de se faire de nouveaux amis.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je trouve qu’il est facile de décoder ce que les autres pensent ou ressentent juste en regardant leur visage.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "J’aime les événements sociaux.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je trouve qu’il est difficile de décoder les intentions des autres.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "J’aime rencontrer de nouvelles personnes.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je suis une personne qui a le sens de la diplomatie.",
+      "type" : "Habiletés sociales",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je préfère tout faire continuellement de la même manière.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je suis fréquemment tellement absorbé(e) par une chose que je perds tout le reste de vue.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Au sein d’un groupe, je peux facilement suivre les conversations de plusieurs personnes à la fois.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "J’ai tendance à avoir des centres d’intérêt très importants. Je me tracasse lorsque je ne peux m’y consacrer.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Cela ne me dérange pas si mes habitudes quotidiennes sont perturbées.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je trouve qu’il est facile de faire plus d’une chose à la fois.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "J’aime faire les choses de manière spontanée.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Si je suis interrompu(e), je peux facilement revenir à ce que j’étais en train de faire.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "J’aime planifier avec soin toute activité à laquelle je participe.",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Les nouvelles situations me rendent anxieux(se).",
+      "type" : "Fléxibilité attentionnelle",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Mon attention est souvent attirée par des bruits discrets que les autres ne remarquent pas.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je fais habituellement attention aux numéros de plaques d’immatriculation ou à d’autres types d’informations de ce genre.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je suis fasciné(e) par les dates.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "J’ai tendance à remarquer certains détails que les autres ne voient pas.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je suis fasciné(e) par les chiffres.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je remarque sans cesse des schémas réguliers dans les choses qui m’entourent.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je me concentre habituellement plus sur l’ensemble d’une image que sur les petits détails de celle-ci.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je ne suis pas très doué(e) pour me souvenir des numéros de téléphone.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je ne remarque habituellement pas les petits changements dans une situation ou dans l’apparence de quelqu’un.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je ne suis pas très doué(e) pour me souvenir des dates de naissance des gens.",
+      "type" : "Attention aux détails",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Les gens me disent souvent que ce que j’ai dit était impoli, même quand je pense moi que c’était poli.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "J’apprécie le bavardage en société.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Quand je parle, il n’est pas toujours facile pour les autres de placer un mot.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je remarque souvent que je ne sais pas comment entretenir une conversation.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je trouve qu’il est facile de « lire entre les lignes » lorsque quelqu’un me parle.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je sais m’en rendre compte quand mon interlocuteur s’ennuie.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Quand je parle au téléphone, je ne suis pas sûr(e) de savoir quand c’est à mon tour de parler.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je suis souvent le(la) dernier(ère) à comprendre le sens d’une blague.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je suis doué(e) pour le bavardage en société.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Les gens me disent souvent que répète continuellement les mêmes choses.",
+      "type" : "Communiction",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Quand j’essaye d’imaginer quelque chose, il est très facile de m’en représenter une image mentalement",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Quand je lis une histoire, je peux facilement imaginer à quoi les personnages pourraient ressembler.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Je trouve facile d’inventer des histoires.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Quand je lis une histoire, je trouve qu’il est difficile de me représenter les intentions des personnages.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : " Je n’aime pas particulièrement lire des romans.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je préfèrerais aller au théâtre qu’au musée.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "Quand j’étais enfant, j’aimais habituellement jouer à des jeux de rôle avec les autres.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    },
+    {
+      "intitule" : "J’aime collectionner des informations sur des catégories de choses (types de voitures, d’oiseaux, de trains, de plantes, ...).",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je trouve qu’il est difficile de s’imaginer dans la peau d’un autre.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 0},
+        {"point" : 0},
+        {"point" : 1},
+        {"point": 1}
+      ]
+    },
+    {
+      "intitule" : "Je trouve qu’il est très facile de jouer à des jeux de rôle avec des enfants.",
+      "type" : "Imagination",
+      "answer": [
+        {"point" : 1},
+        {"point" : 1},
+        {"point" : 0},
+        {"point": 0}
+      ]
+    }
+  ],
+  "moyennes" : [
+    {
+      "type" : "Habiletés sociales",
+      "valeur-aspie" : "7.5",
+      "valeur-NT" : "2.6"
+    },
+    {
+      "type" : "Flexibilité attentionnelle",
+      "valeur-aspie" : "8.0",
+      "valeur-NT" : "3.9"
+    },{
+      "type" : "Attention aux détails",
+      "valeur-aspie" : "6.7",
+      "valeur-NT" : "5.3"
+    },{
+      "type" : "Communication",
+      "valeur-aspie" : "7.2",
+      "valeur-NT" : "2.4"
+    },{
+      "type" : "Imagination",
+      "valeur-aspie" : "6.4",
+      "valeur-NT" : "2.3"
+    }
+  ]
 }
