@@ -50,6 +50,7 @@ import { ExerciseDetailComponent } from './pages/restrictedContent/exercises-lis
 import {HttpClientModule} from "@angular/common/http";
 import { MiseEnSituationComponent } from './exercises/mise-en-situation/mise-en-situation.component';
 import { ExerciseInstructionComponent } from './pages/restrictedContent/exercise/exercise-instruction/exercise-instruction.component';
+import { PersonalityFormComponent } from './pages/personality-form/personality-form.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ExerciseInstructionComponent } from './pages/restrictedContent/exercise
     ProfileComponent,
     ExerciseDetailComponent,
     MiseEnSituationComponent,
-    ExerciseInstructionComponent
+    ExerciseInstructionComponent,
+    PersonalityFormComponent
   ],
   imports: [
     HttpClientModule,

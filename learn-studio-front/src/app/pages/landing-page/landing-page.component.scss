@@ -163,3 +163,18 @@ div{
     z-index: 2;
   }
 }
+
+.callToAction2:hover {
+  background-color: $shadedBlueLink;
+  color: $shadedBlueTxt;
+}
+
+.callToAction{
+  border: solid 3px $shadedBlueLink;
+}
+
+
+.callToAction:hover {
+  background-color: $shadedBlueTxt;
+  color: $shadedBlueLink;
+}

@@ -35,4 +35,8 @@ export class LandingPageComponent implements OnInit {
     !this.register ? this.router.navigate(['/'], {queryParams: { register: true }}) : this.router.navigate(['/']);
   }
 
+  click_personality_form(): void {
+    this.router.navigate(['personality_form']);
+  }
+
 }

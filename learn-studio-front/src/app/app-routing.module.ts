@@ -6,9 +6,11 @@ import {NavigationBarComponent} from "./pages/restrictedContent/navigation-bar/n
 import {ProfileComponent} from "./pages/restrictedContent/profile/profile.component";
 import {ExercisesListComponent} from "./pages/restrictedContent/exercises-list/exercises-list.component";
 import {ExerciseComponent} from "./pages/restrictedContent/exercise/exercise.component";
+import {PersonalityFormComponent} from "./pages/personality-form/personality-form.component";
 
 const routes: Routes = [
   {path: '', component: LandingPageComponent},
+  {path: 'personality_form', component: PersonalityFormComponent},
   {path: 'error', component: ErrorPageComponent},
   {path: 'learn', component: NavigationBarComponent},
   {path: 'learn/exercises', component: ExercisesListComponent},
