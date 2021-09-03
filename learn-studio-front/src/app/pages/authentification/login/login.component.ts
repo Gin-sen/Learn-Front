@@ -36,14 +36,14 @@ export class LoginComponent implements OnInit {
     if (!this.emailFormControl.invalid && !this.passwordFormControl.invalid) {
       // TODO request login -> this.emailFormControl.value, this.passwordFormControl.value
       this.userService.userLogin(this.emailFormControl.value, this.passwordFormControl.value).subscribe(
-        (data) => {
+        (data: any) => {
           console.log("logged", data);
-          localStorage.setItem("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTMxZDlmNDY1NDU2NDAwMWRjNDY5MjQiLCJpYXQiOjE2MzA2NTcwMzJ9.axhLGcL366kyJg919ZaMBpGGXU9MdH9QvGsGA6OYQDg")
+          localStorage.setItem("token", data.token);
+          this.router.navigate(['/learn/exercises']);
         }, (error) => {
           console.log(error);
         }
       );
-      this.router.navigate(['/learn/exercises']);
     }
 
   }
