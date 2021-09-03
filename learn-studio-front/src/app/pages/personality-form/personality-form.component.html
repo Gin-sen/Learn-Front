@@ -1,1 +1,38 @@
-<p>personality-form works!</p>
+<div class="blurryWrapperIn">
+  <div class="whiteWrapper">
+    <button mat-mini-fab class="close" (click)="close.emit()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <div class="header_wrapper">
+      <H3>Formulaire de personalité</H3>
+      <ol>
+        <li class="form_line header_line">
+          <div></div>
+          <div class="radio_button_wrapper">
+            <div class="radio">Pas d'accord</div>
+            <div class="radio">Plutôt pas d'accord</div>
+            <div class="radio">Plutôt d'accord</div>
+            <div class="radio">D'accord</div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  <div class="scroll_wrapper">
+    <ol>
+      <li *ngFor="let question of questionList" class="form_line">
+        <div>
+          {{question.intitule}}
+        </div>
+        <mat-radio-group aria-label="Select an option" class="radio_button_wrapper">
+          <div class="radio"><mat-radio-button value="1"></mat-radio-button></div>
+          <div class="radio"><mat-radio-button value="2"></mat-radio-button></div>
+          <div class="radio"><mat-radio-button value="3"></mat-radio-button></div>
+          <div class="radio"><mat-radio-button value="4"></mat-radio-button></div>
+        </mat-radio-group>
+      </li>
+    </ol>
+    <button class="button">Obtenir mes résultats</button>
+  </div>
+</div>
+</div>

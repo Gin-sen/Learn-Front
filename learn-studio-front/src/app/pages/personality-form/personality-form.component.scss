@@ -1,0 +1,146 @@
+@import "src/styles";
+
+.blurryWrapperIn {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteWrapper {
+  position: relative;
+  background-color: $blurryWrapperBox;
+  width: 94vw;
+  height: 90vh;
+  min-width: 400px;
+  min-height: 600px;
+  border-radius: 25px;
+  padding: 1em;
+
+  .header_wrapper {
+    height: 70px;
+  }
+
+  .scroll_wrapper {
+    height: calc(90vh - 70px);
+    overflow-y: auto;
+  }
+}
+
+.button {
+  background-color: $shadedBlue;
+  color: $shadedBlueTxt;
+  margin: 1em 0;
+  border-radius: 5px;
+  border: 0;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: small;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.close {
+  color: $blurryWrapperBox;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  background-color: $shadedBlueLink;
+}
+
+
+
+
+
+.form_line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em 0;
+}
+
+.header_line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0!important;
+}
+
+.radio_button_wrapper {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.radio {
+  position: relative;
+  width: 8vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+li {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+::ng-deep .radio:nth-child(1) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: greenyellow!important;   /*inner circle color change*/
+}
+::ng-deep .radio:nth-child(2) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: yellow!important;   /*inner circle color change*/
+}
+::ng-deep .radio:nth-child(3) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: orange!important;   /*inner circle color change*/
+}
+::ng-deep .radio:nth-child(4) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: red!important;   /*inner circle color change*/
+}
+
+::ng-deep .radio:nth-child(1) .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  background-color: white!important;   /*inner circle color change*/
+  border-color: greenyellow!important; /*outer ring color change*/
+}
+::ng-deep .radio:nth-child(2) .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  background-color: white!important;   /*inner circle color change*/
+  border-color: yellow!important; /*outer ring color change*/
+}
+::ng-deep .radio:nth-child(3) .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  background-color: white!important;   /*inner circle color change*/
+  border-color: orange!important; /*outer ring color change*/
+}
+::ng-deep .radio:nth-child(4) .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  background-color: white!important;   /*inner circle color change*/
+  border-color: red!important; /*outer ring color change*/
+}
+
+::ng-deep .radio:nth-child(1) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: greenyellow!important;   /*inner circle color change*/
+}
+::ng-deep .radio:nth-child(2) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: yellow!important;   /*inner circle color change*/
+}
+::ng-deep .radio:nth-child(3) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: orange!important;   /*inner circle color change*/
+}
+::ng-deep .radio:nth-child(4) .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: red!important;   /*inner circle color change*/
+}
+
+::ng-deep  .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-ripple .mat-ripple-element {
+  background-color: transparent!important;   /*inner circle color change*/
+}

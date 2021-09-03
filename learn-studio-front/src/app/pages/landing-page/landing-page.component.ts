@@ -10,13 +10,16 @@ export class LandingPageComponent implements OnInit {
 
   register: boolean;
   login: boolean;
+  personality_form: boolean;
 
   constructor(private route: ActivatedRoute, private router: Router) {
     this.register = false;
     this.login = false;
+    this.personality_form = false;
     this.route.queryParams.subscribe(params => {
       this.register = params.register !== undefined && params.register === 'true';
       this.login = params.login !== undefined && params.login === 'true';
+      this.personality_form = params.personality_form !== undefined && params.personality_form === 'true';
     });
   }
 
@@ -36,7 +39,8 @@ export class LandingPageComponent implements OnInit {
   }
 
   click_personality_form(): void {
-    this.router.navigate(['personality_form']);
+    !this.personality_form ? this.router.navigate(['/'], {queryParams: { personality_form: true }}) : this.router.navigate(['/']);
+
   }
 
 }

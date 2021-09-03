@@ -96,8 +96,9 @@
   </div>
 
 
-  <div class="blurryBackground" *ngIf="login || register">
+  <div class="blurryBackground" *ngIf="login || register || personality_form">
     <app-login *ngIf="login" (close)="click_login()"></app-login>
     <app-register1 *ngIf="register" (close)="click_register()"></app-register1>
+    <app-personality-form *ngIf="personality_form" (close)="click_register()"></app-personality-form>
   </div>
 </div>
