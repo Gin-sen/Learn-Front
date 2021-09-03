@@ -19,6 +19,9 @@
 .custom-radio-label{
   border: 1px solid black;
   margin: 2rem;
+}
 
-
+.blurry {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }

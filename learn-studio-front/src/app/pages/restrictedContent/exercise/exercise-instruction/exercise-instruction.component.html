@@ -1,7 +1,8 @@
-<h2 mat-dialog-title>{{title}}</h2>
+<h2 mat-dialog-title>{{data.title}}</h2>
 <mat-dialog-content class="mat-typography">
-  <p>{{consigne}}</p>
+  <p>{{data.consigne}}</p>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Démarrer l'exercice</button>
+  <button mat-button [mat-dialog-close]="false" cdkFocusInitial>Retour</button>
+  <button mat-button [mat-dialog-close]="true">Démarrer l'exercice</button>
 </mat-dialog-actions>
