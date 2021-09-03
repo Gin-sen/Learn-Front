@@ -6,7 +6,16 @@
         Profil
       </div>
       <div class="form">
-
+        <ul *ngIf="error === null">
+          <li>{{profil.username}}</li>
+          <li>{{profil.email}}</li>
+          <li>{{profil.lastname}}</li>
+          <li>{{profil.firstname}}</li>
+        </ul>
+        <div *ngIf="error">
+          {{error}}
+        </div>
+        <button (click)="logout()">Logout</button>
       </div>
     </div>
   </div>

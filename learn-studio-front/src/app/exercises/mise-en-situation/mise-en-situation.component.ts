@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import {FormControl, Validators} from "@angular/forms";
 import {MatDialog} from "@angular/material/dialog";
 import exercise1 from '../../../assets/exercices/exercice1.json';
@@ -63,6 +63,11 @@ export class MiseEnSituationComponent implements OnInit {
 
 
   ngOnInit() {
+  }
+
+  ngOnDestroy(): void {
+    console.log("quit");
+    this.player.pause();
   }
 
   checkResponse = (qNumber: Number, point: Number) => {
