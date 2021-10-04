@@ -11,7 +11,6 @@ import {PersonalityFormResultComponent} from "./pages/personality-form/personali
 
 const routes: Routes = [
   {path: '', component: LandingPageComponent},
-  {path: 'test', component: PersonalityFormResultComponent},
   {path: 'personality_form', component: PersonalityFormComponent},
   {path: 'error', component: ErrorPageComponent},
   {path: 'learn', component: NavigationBarComponent},

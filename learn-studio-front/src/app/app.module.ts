@@ -33,6 +33,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import { ChartsModule } from 'ng2-charts';
 
@@ -111,7 +112,8 @@ import { PersonalityFormResultComponent } from './pages/personality-form/persona
         MatTreeModule,
         ReactiveFormsModule,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+      DragDropModule
     ],
   providers: [],
   bootstrap: [AppComponent]

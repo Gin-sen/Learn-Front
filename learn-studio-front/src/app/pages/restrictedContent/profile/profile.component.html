@@ -6,16 +6,27 @@
         Profil
       </div>
       <div class="form">
-        <ul *ngIf="error === null">
-          <li>{{profil.username}}</li>
-          <li>{{profil.email}}</li>
-          <li>{{profil.lastname}}</li>
-          <li>{{profil.firstname}}</li>
-        </ul>
+        <div *ngIf="error === null" class="list">
+        <div class="line">
+          <div class="label">Pseudo :</div>
+          <div class="content">{{profil.username}}</div>
+        </div>
+        <div class="line">
+          <div class="label">Prénom :</div>
+          <div class="content">{{profil.firstname}}</div>
+        </div>
+        <div class="line">
+          <div class="label">Nom :</div>
+          <div class="content">{{profil.lastname}}</div>
+        </div>
+        <div class="line">
+          <div class="label">Email :</div>
+          <div class="content">{{profil.email}}</div>
+        </div>
+        </div>
         <div *ngIf="error">
           {{error}}
         </div>
-        <button (click)="logout()">Logout</button>
       </div>
     </div>
   </div>

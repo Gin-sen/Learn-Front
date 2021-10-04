@@ -13,4 +13,9 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  logout() {
+    localStorage.removeItem("token");
+    this.router.navigate(['/']);
+  }
+
 }
