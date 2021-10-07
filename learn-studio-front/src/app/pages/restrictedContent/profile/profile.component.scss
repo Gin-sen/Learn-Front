@@ -1,1 +1,26 @@
 @import "src/styles";
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .line {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 15vw;
+    .content {
+      width: 10vw;
+    }
+    .label {
+      font-weight: bold;
+      color: grey;
+    }
+  }
+}
+
+

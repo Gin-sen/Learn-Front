@@ -63,16 +63,15 @@ html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .pageWrapper {
-  height: calc(100vh - 96px);
-  padding: 3vh 3vh 0 3vh;
-
+  height: calc(96vh - 64px);
   .pageBox {
+    margin: 3vh 3vh 0 3vh;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    height: calc(96vh - 96px);
-    padding: 1em;
-    // border-radius: 25px;
+    height: calc(94vh - 64px);
+    //padding: 1em;
+    border-radius: 5px;
     overflow: auto;
     display: flex;
     flex-direction: column;

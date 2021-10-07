@@ -13,12 +13,22 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
       <mat-icon>poll</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <!--<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
       <mat-icon matBadge="15" matBadgeColor="accent" matBadgePosition="below">notifications</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" (click)="router.navigate(['learn/profile'])">
+    </button>-->
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [matMenuTriggerFor]="menu">
       <mat-icon>account_circle</mat-icon>
     </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="router.navigate(['learn/profile'])">
+          <mat-icon>face</mat-icon>
+          <span>Profil</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Se déconnecter</span>
+        </button>
+      </mat-menu>
     </div>
   </mat-toolbar>
 </div>

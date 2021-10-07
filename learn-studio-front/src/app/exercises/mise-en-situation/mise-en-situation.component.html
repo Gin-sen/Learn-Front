@@ -6,46 +6,74 @@
 
     <!--<button mat-button class="consigne" (click)="openDialog()">Lire les consignes</button>-->
   </div>
+  <div class="flex_wrapper">
 
-  <p>{{ contexte }}</p>
+    <div class="restraint_width spaced_paragraph" [innerHTML]="contexte"></div>
+    <div class="chrono" *ngIf="printDate">
+      {{timerMin + ":" + timerSec}}
+    </div>
 
-  <mat-horizontal-stepper>
+    <mat-horizontal-stepper>
 
-    <mat-step *ngFor="let situation of situations; let i = index" label="Situation {{ i + 1 }}">
-      <p>{{ situation.scenario }}</p>
-      <p class="consigne">{{ situation.todo }}</p>
-      <div *ngFor="let liste of situation.liste; let j = index" >
-        <div class="form-check flexContent">
-          <div>
-            <p>{{ liste.proposition }}</p>
+      <mat-step *ngFor="let situation of situations; let i = index" label="Situation {{ i + 1 }}" >
+        <div class="flex_wrapper">
+          <div [innerHTML]="situation.scenario" class="restraint_width spaced_paragraph"></div>
+          <p class="consigne centered">{{ situation.todo }}</p>
+          <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+            <div class="example-box" *ngFor="let liste of situation.liste; let j = index" cdkDrag>
+              <div class="proposition">{{ liste.proposition }}</div>
+              <div class="proposition_index">{{responses[j].viewValue}}</div>
+            </div>
           </div>
-          <mat-form-field appearance="fill">
-            <mat-label>Sélectionner la réponse</mat-label>
-            <mat-select required [formControl]="selectFormControl">
-              <mat-option *ngFor="let response of responses" [value]="response.value">
-                {{response.viewValue}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
+
+          <div class="flexContent stepper_footer">
+            <button *ngIf="i != 0" mat-button matStepperPrevious>Situation précédente</button>
+            <button mat-button matStepperNext class="right-button">Situation suivante</button>
+          </div>
+        </div>
+
+
+      </mat-step>
+
+      <!--<mat-step *ngFor="let situation of situations; let i = index" label="Situation {{ i + 1 }}">
+        <p>{{ situation.scenario }}</p>
+        <p class="consigne">{{ situation.todo }}</p>
+        <div *ngFor="let liste of situation.liste; let j = index" >
+          <div class="form-check flexContent">
+            <div>
+              <p>{{ liste.proposition }}</p>
+            </div>
+            <mat-form-field appearance="fill">
+              <mat-label>Sélectionner la réponse</mat-label>
+              <mat-select required [formControl]="selectFormControl">
+                <mat-option *ngFor="let response of responses" [value]="response.value">
+                  {{response.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+          </div>
+          <mat-divider></mat-divider>
 
         </div>
-        <mat-divider></mat-divider>
+        <div class="flexContent">
+          <button *ngIf="true" mat-button matStepperPrevious>Situation précédente</button>
+          <button  mat-button *ngIf="!selectFormControl.hasError('required')" mat-button matStepperNext class="right-button">Situation suivante</button>
+        </div>
 
-      </div>
-      <div class="flexContent">
-        <button *ngIf="true" mat-button matStepperPrevious>Situation précédente</button>
-        <button  mat-button *ngIf="!selectFormControl.hasError('required')" mat-button matStepperNext class="right-button">Situation suivante</button>
-      </div>
-
-    </mat-step>
-    <mat-step label="Fin">
-      <p>Vous êtes arrivés à la fin questionnaire. Vous avez encore la possibilité de revenir aux questions précédentes pour corriger vos réponses, ou bien vous pouvez envoyer vos réponses. <br/>
-        Une fois vos réponses envoyées, vous ne pourrez plus revenir en arrière et votre score sera sauvegardé.</p>
-      <div>
-        <button mat-button>Valider mes réponses</button>
-        <button mat-button matStepperPrevious>Corriger mes réponses</button>
-      </div>
-    </mat-step>
-  </mat-horizontal-stepper>
+      </mat-step>-->
+      <mat-step label="Fin">
+        <div class="flex_wrapper">
+          <p class="spaced_paragraph centered">Vous êtes arrivés à la fin questionnaire.<br>
+            Vous avez encore la possibilité de revenir aux questions précédentes pour corriger vos réponses, ou bien vous pouvez envoyer vos réponses. <br/>
+            Une fois vos réponses envoyées, vous ne pourrez plus revenir en arrière et votre score sera sauvegardé.</p>
+          <div>
+            <button mat-button>Valider mes réponses</button>
+            <button mat-button matStepperPrevious>Corriger mes réponses</button>
+          </div>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>
 
 </div>

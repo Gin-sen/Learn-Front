@@ -53,7 +53,8 @@ export class RegisterComponent implements OnInit {
         this.passwordFormControl.value);
 
       // this.router.navigate(['/'], {queryParams: { login: true }});
-    }
+    };
+    this.router.navigate(['/'], {queryParams: { login: true }})
   }
 
 }

@@ -91,6 +91,7 @@ div{
   background-position: right;
 }
 .toolbar {
+  height: 10vh;
   background-color: $shadedBlue;
   color: $shadedBlueTxt;
   display: flex;
@@ -113,13 +114,13 @@ div{
   }
 
   .loginButton, .registerButton {
+    font-size: large;
     border-radius: 5px;
     color: $shadedBlueTxt;
     background-color: $shadedBlueLink;
     border: 0;
     padding: 0.5em;
     font-weight: bold;
-    font-size: small;
     margin-right: 1em;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);

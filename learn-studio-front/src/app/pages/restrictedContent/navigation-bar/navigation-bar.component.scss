@@ -1,6 +1,7 @@
 @import "src/styles";
 
 .toolbar {
+  height: $headerHeight;
   background-color: $shadedBlue;
   color: $shadedBlueTxt;
   display: flex;
