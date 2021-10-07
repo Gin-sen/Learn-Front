@@ -1,6 +1,6 @@
 {
   "/api/*": {
-    "target": "http://node:3000",
+    "target": "http://learn-studio-api:3000",
     "pathRewrite": {"^/api/" :  "/"},
     "secure": false,
     "logLevel": "debug"
