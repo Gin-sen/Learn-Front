@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "learn-studio-front.fullname" . }}
+  labels:
+    app: {{ template "learn-studio-front.name" . }}
+    chart: {{ template "learn-studio-front.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  {{- if .Values.ingress.enabled }}
+  type: ClusterIP
+  {{- else }}
+  type: LoadBalancer
+  {{- end }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.port }}
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "learn-studio-front.name" . }}
+    release: {{ .Release.Name }}

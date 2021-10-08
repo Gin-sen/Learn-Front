@@ -27,5 +27,6 @@ COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./nginx/proxy.conf /etc/nginx/includes/
 
 EXPOSE 80
+EXPOSE 443
 
 CMD nginx -g "daemon off;"
