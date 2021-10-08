@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Réponses les plus et les moins efficaces",
+    "instruction": "Quel comportement adopter dans ces situations ?",
+    "cas": [
+      {
+        "contexte": "Vous travaillez en tant que stagiaire diplômé pour Sutton & Sykes, un fabricant de produits électriques domestiques pour le marché britannique et européen. Vous participez à un programme de stage par rotation et passez 6 mois dans chacun des 4 départements différents de l'entreprise afin d'apprendre les ficelles du métier avant d'être évalué pour un poste de direction permanent. <br/><br/>Vous avez terminé vos stages dans la fabrication et dans les services d'installations. Vous êtes à mi-chemin de vos 6 mois au service des ressources humaines (RH). L'équipe RH est basée à Alton, Hampshire, au siège de Sutton & Sykes. Les autres sites de l'entreprise sont situés dans le sud-est de l'Angleterre, y compris une grande usine de fabrication et d'assemblage sur l'île de Wight et une division de recherche à Southampton. <br/><br/>Votre stage final se fera au sein du département des finances et doit commencer à la fin de vos 6 mois dans les RH.",
+        "situations": [
+          {
+            "scenario":"L'un des premiers projets qui vous est confié en rejoignant le service RH est de réaliser une revue des services de recrutement achetés par Sutton & Sykes. Il vous a été demandé d'attribuer un nouveau contrat de 12 mois au(x) fournisseur(s) qui, selon vous, offriront le meilleur « rapport qualité-prix ». <br/><br/>Aujourd'hui, vous assistez à une brève réunion avec d'autres membres de l'équipe d'examen pour prendre une décision en fonction de vos conclusions. Vous rencontrerez un collègue des finances, un cadre supérieur de la division de la recherche et le partenaire commercial RH pour la fabrication et l'assemblage. <br/><br/>À partir de votre analyse de la gamme de fournisseurs disponibles sur le marché du recrutement, vous êtes arrivé à une liste restreinte de trois grands cabinets de recrutement. Vous pensez que ce sont les seuls qui possèdent l'expertise et la compréhension nécessaires pour recruter le personnel spécialisé d'ingénierie et de recherche requis. <br/><br/>Vous savez que votre collègue financier favorise le fournisseur A car il est le moins cher, le cadre supérieur favorise le fournisseur B car il entretient de bonnes relations avec son consultant principal et le partenaire commercial RH favorise le fournisseur C car il est considéré comme la référence dans l'industrie en termes de meilleures pratiques. <br/><br/>Vous devez arriver à une conclusion à la fin de cette réunion d'une heure.",
+            "todo": "Passez en revue les réponses A à D suivantes et indiquez si vous pensez que la réponse est 1 – La réponse la plus efficace, 2 – La deuxième réponse la plus efficace, 3 – La troisième réponse la plus efficace ou 4 – La réponse la moins efficace . Vous ne pouvez attribuer chaque note qu'une seule fois.",
+            "liste": [
+              {
+                "proposition": "Ouvrez la réunion en demandant l'avis de vos collègues, puis autorisez un débat libre dans lequel un consensus naturel devrait se dégager d'ici la fin de la réunion.",
+                "order": 2,
+                "point": 1,
+                "correction": "C'est la réponse la moins efficace car il n'y a aucune garantie que vos collègues seront en mesure de parvenir à un consensus et il y a un risque que la réunion se termine sans qu'aucune décision ne soit prise."
+
+              },
+              {
+                "proposition": "Laissez un débat libre pendant les 15 premières minutes, puis proposez progressivement une structure (par exemple : convenir de critères, analyser systématiquement les options par rapport à ces critères) afin de parvenir à une décision en temps opportun.",
+                "order": 1,
+                "point": 1,
+                "correction": "C'est la réponse la plus efficace car vous laissez à vos collègues le temps de s'exprimer comme ils peuvent s'y attendre compte tenu de leur ancienneté et vous soutenez et aidez ensuite le groupe à prendre une décision et à surmonter tout désaccord."
+              },
+              {
+                "proposition": "Au début, suggérez que vous utilisiez des critères définis pour analyser les trois options, que le groupe accepte ces critères pour commencer et que vous divisez l'heure en trois sections – accord des critères, discussion des options par rapport aux critères et décision finale.",
+                "order": 3,
+                "point": 1,
+                "correction": "Une réponse raisonnable qui, espérons-le, conduirait à une bonne décision, cependant, comme vous avez affaire à des collègues relativement seniors, ils peuvent se sentir un peu « immobilisés » par une approche aussi structurée et peu disposés à être contrôlés si étroitement par vous en tant que collègue junior ; par conséquent, vous pouvez rencontrer une certaine résistance lors de la réunion."
+              },
+              {
+                "proposition": "Exprimez votre opinion assez clairement et en toute confiance au début de la réunion, en énumérant les avantages et les inconvénients de chaque option, puis en indiquant quel conseil vous pensez être le meilleur pour Sutton & Sykes. Ensuite, demandez à vos collègues leur avis.",
+                "order": 4,
+                "point": 1,
+                "correction": "Pas une réponse particulièrement appropriée car vos collègues peuvent penser que vous n'êtes pas ouvert à prendre en compte leurs opinions car vous avez déjà pris votre décision et vous utiliserez trop de temps à parler plutôt qu'à écouter."
+              }
+
+            ]
+          },
+          {
+            "scenario":"Vous avez reçu un e-mail d'une responsable senior du département Finance, Sally Arkwright, qui sera votre superviseur de stage lorsque vous rejoindrez l'équipe dans 3 mois. Elle tient à ce que vous sachiez que vous rejoindrez le département au moment le plus occupé. <br/><br/>Vous devez commencer en Finance en janvier, qui correspond à la haute saison de la planification financière. Le personnel travaillera d'arrache-pied pour produire les plans d'affaires annuels et les allocations budgétaires pour chaque département de Sutton & Sykes et pour les aligner sur les projections de profits et pertes pour l'entreprise. <br/><br/>Votre superviseur estime qu'il est très important que vous en soyez conscient afin que vous puissiez « prendre le dessus » lorsque vous rejoignez l'équipe. Vous n'avez jamais travaillé dans un rôle financier auparavant.",
+            "todo": "Passez en revue les réponses A à D suivantes et indiquez si vous pensez que la réponse est 1 – La réponse la plus efficace, 2 – La deuxième réponse la plus efficace, 3 – La troisième réponse la plus efficace ou 4 – La réponse la moins efficace . Vous ne pouvez attribuer chaque note qu'une seule fois.",
+            "liste": [
+              {
+                "proposition": "Recherchez sur Internet des informations sur la planification d'entreprise, la budgétisation et le calcul des pertes et profits.",
+                "order": 4,
+                "point": 1,
+                "correction": "Ce n'est pas une réponse particulièrement appropriée car vous ne pourrez pas concentrer cette recherche avec précision sans plus d'informations de Sally sur les projets spécifiques sur lesquels vous pourriez travailler."
+              },
+              {
+                "proposition": "Envoyez un e-mail à Sally et demandez-lui s'il serait possible d'avoir une rencontre en tête-à-tête avec elle avant de commencer votre stage pour en savoir le plus possible sur les projets sur lesquels vous pourriez travailler.",
+                "order": 1,
+                "point": 1,
+                "correction": "C'est la réponse la plus efficace car vous serez en mesure de trouver le maximum de détails auprès de Sally avant de commencer le placement. En faisant cela, vous serez en mesure d'entreprendre un apprentissage sur mesure et ciblé pour améliorer vos compétences et vos connaissances avant de commencer."
+              },
+              {
+                "proposition": "Remerciez Sally et dites que vous la contacterez en décembre, quelques semaines avant votre placement, et lui demanderez des détails précis sur vos projets.",
+                "order": 2,
+                "point": 1,
+                "correction": "C'est la réponse la moins efficace car, bien que si vous preniez les autres approches suggérées, il se pourrait que vous deviez attendre jusqu'à ce moment pour les détails spécifiques des projets, au moins avec ces réponses, vous pourriez travailler pour vous préparer beaucoup plus tôt. que quelques semaines avant le début de votre stage."
+              },
+              {
+                "proposition": "Envoyez un e-mail à Sally pour la remercier de son avertissement précoce. Demandez-lui si elle peut fournir des informations sur les projets sur lesquels vous pourriez travailler en janvier.",
+                "order": 3,
+                "point": 1,
+                "correction": "Une réponse raisonnable car vous pouvez obtenir de bonnes informations de Sally de cette façon. Cependant, il serait encore mieux d'investir plus de temps dans le sujet et de rencontrer Sally en personne pour vraiment « se faire réfléchir » sur la situation."
+              }
+            ]
+          },
+          {
+            "scenario":"Il est 9 heures du matin un lundi matin et vous venez de recevoir un e-mail de votre patronne, Maria Alvarez, vous demandant d'avancer la date limite de « fermeture du jeu » aujourd'hui pour un petit projet de recherche que vous meniez pour elle. <br/><br/>Elle dit qu'elle vous demande le rapport écrit un jour plus tôt (quand elle vous a parlé du rapport vendredi, elle a dit qu'il serait terminé d'ici la fin de demain) car elle a une réunion urgente à ce sujet demain matin. Vous n'avez pas encore commencé à travailler sur le rapport et vous estimez qu'il vous faudra 4 ou 5 heures pour le terminer. <br/><br/>Il y a deux autres e-mails dans votre boîte de réception. L'un provient d'un collègue des RH qui est en arrêt maladie aujourd'hui mais devait assister à une réunion de liaison avec les RH à Southampton avec le chef du département de recherche. L'e-mail dit qu'il a demandé à Maria et elle est heureuse que vous alliez à sa place. La réunion doit commencer à 11h et le trajet d'Alton à Southampton dure environ 1 heure. <br/><br/>Le troisième e-mail est un rappel d'une feuille de commentaires que le responsable du développement des diplômés a envoyée à tous les stagiaires diplômés il y a une semaine. Il sollicite vos commentaires et points de vue sur la façon d'améliorer le programme de stagiaires pour la nouvelle promotion en janvier. Vous avez jeté un coup d'œil à la feuille et il s'agit d'un questionnaire de quatre pages qui nécessite une contribution réfléchie de votre part. Il souhaite que le formulaire soit renvoyé d'ici la fin de la journée pour lui laisser le temps d'analyser les retours et d'en faire bon usage.",
+            "todo": "Passez en revue les réponses A à D suivantes et indiquez si vous pensez que la réponse est 1 – La réponse la plus efficace, 2 – La deuxième réponse la plus efficace, 3 – La troisième réponse la plus efficace ou 4 – La réponse la moins efficace . Vous ne pouvez attribuer chaque note qu'une seule fois.",
+            "liste": [
+              {
+                "proposition1": "Parlez à Maria et expliquez que si vous vous rendez à la réunion à Southampton, cela peut vous empêcher de rédiger votre rapport à temps et qu'il serait donc préférable que quelqu'un d'autre y aille à la place. Envoyez un e-mail au responsable et dites que, malheureusement, vous ne recevrez peut-être pas de commentaires avant demain en milieu de matinée.",
+                "order": 4,
+                "point": 1,
+                "correction1": "Pas une réponse particulièrement appropriée car vous disposez de suffisamment de temps pour terminer les deux tâches importantes à temps tant que vous gérez les attentes du chef du département de recherche, voir la réponse D ci-dessous."
+              },
+              {
+                "proposition2": "Dites que vous assisterez à la réunion, puis retournerez au bureau cet après-midi pour terminer votre rapport pour Maria. Envoyez un e-mail au GDM et dites que vous ne lui recevrez peut-être pas de commentaires avant demain en milieu de matinée.",
+                "order": 3,
+                "point": 1,
+                "correction2": "Une réponse raisonnable, mais sans limiter le temps de la réunion, vous risquez de manquer de temps l'après-midi."
+              },
+              {
+                "proposition3": "Remplissez la feuille de commentaires pour le GDM en premier lieu car cela a attendu le plus longtemps pour être fait. Dites à Maria que vous ne pouvez pas assister à la réunion car si vous le faites, vous risquez de ne pas terminer son rapport. Passez le reste de la journée à rédiger votre rapport pour Maria.",
+                "order": 2,
+                "point": 1,
+                "correction3": "Il s'agit de la réponse la moins efficace, car le retour d'information au GDM est la tâche la moins urgente. Bien que cela soit d'une grande importance, même si vous lui recevez le feedback avec quelques heures de retard, il devrait toujours pouvoir l'utiliser, car l'analyse de toutes les fiches de feedback lui prendra de toute façon un temps raisonnable."
+
+              },
+              {
+                "proposition4": "Acceptez d'assister à la réunion et signalez à Maria que vous y allez. Envoyez un e-mail au GDM et excusez-vous de ne pouvoir lui faire part de ses commentaires avant demain en milieu de matinée. Envoyez un e-mail au chef du département de recherche et excusez-vous de ne pouvoir vous rencontrer que pendant une heure maximum aujourd'hui en raison d'un emploi du temps chargé ; demandez-lui s'il préfère reprogrammer lorsque votre collègue est de retour au travail ou s'il est satisfait d'une courte réunion. Commencez votre rapport entre 9h et 10h. Assistez à la réunion, le cas échéant, puis revenez à Alton avant 13 heures et rédigez votre rapport pour Maria jusqu'à 17 heures.",
+                "order": 3,
+                "point": 1,
+                "correction4": "C'est la réponse la plus efficace car, en limitant la durée de la réunion, il y a suffisamment de temps dans la journée pour accomplir les deux tâches urgentes et importantes. Le rapport de rétroaction GDM est important mais pas critique car les nouveaux stagiaires n'arrivent pas avant 3 mois"
+              }
+            ]
+          },
+          {
+            "scenario":"Vous participez à une réunion avec votre patronne Maria. On vous a demandé de participer à la rencontre avec les représentants d'un nouveau client potentiel au détail, Jack Lanis Stores. <br/><br/>Jack Lanis Stores (JLS) est un groupe important de grands magasins qui a bâti une solide marque en tant que détaillant éthique et responsable. La chaîne se targue de proposer des produits de fabrication britannique des produits respectueux de l'environnement et issus de sources responsables sur le marché dans la rue principale du Royaume-Uni. <br/><br/>Tant que Jack Lanis est géré comme une coopérative, où tous ses employés possèdent une partie de l'entreprise, ils regardent dossiers des fournisseurs potentiels en ce qui concerne le traitement éthique et équitable des employés. Cette comprend les niveaux de rémunération et les conditions contractuelles des employés. <br/><br/>Si cette réunion va bien (c'est-à-dire que les représentants de Jack Lanis sont convaincus que Sutton & Sykes est une société juste et entreprise éthique en ce qui concerne la façon dont elle traite ses employés), alors une grosse affaire pourrait être signé pour Sutton & Sykes pour fournir 40 000 machines à laver et 14 000 sèche-linge par année à la chaîne de distribution. <br/><br/>À mi-parcours de la réunion, Nazib Khan, l'acheteur principal de JLS, se tourne vers vous, en tant que nouveau venu dans l'entreprise, et vous demande quel est votre point de vue Sutton & Sykes.",
+            "todo": "Passez en revue les réponses A à D suivantes et indiquez si vous pensez que la réponse est 1 – La réponse la plus efficace, 2 – La deuxième réponse la plus efficace, 3 – La troisième réponse la plus efficace ou 4 – La réponse la moins efficace . Vous ne pouvez attribuer chaque note qu'une seule fois.",
+            "liste": [
+              {
+                "proposition": "Remerciez M. Khan d'avoir demandé votre avis et vérifiez ce qu'il aimerait en entendre parler en particulier, puis essayez de répondre à son intérêt aussi honnêtement et positivement que possible.",
+                "order": 1,
+                "point": 1,
+                "correction": "C'est la réponse la plus efficace car, vous essayez de savoir ce que M. Khan aimeriez savoir avant de répondre à sa question, vous pourrez ainsi adapter votre compte pour lui donner des informations sur les choses qui l'intéressent"
+              },
+              {
+                "proposition": "Remerciez M. Khan d'avoir demandé votre avis et dites que vous avez toujours été traité conformément aux principes justes et éthiques de Sutton & Sykes structure de l'emploi. Illustrez ceci en montrant à M. Khan un Sutton & Document de politique d'emploi de Sykes.",
+                "order": 4,
+                "point": 1,
+                "correction": "Pas une réponse particulièrement appropriée car vous ne donnez pas à M. Khan le « personnel » compte qu'il semble qu'il pourrait être à la recherche."
+              },
+              {
+                "proposition": "Donnez un compte rendu honnête et positif de votre recrutement, sélection, formation et gestion en tant que stagiaire diplômé; inclure quelques des exemples de la façon dont ces choses ont été faites de manière équitable et éthique par Sutton & Sykes.",
+                "order": 3,
+                "point": 1,
+                "correction": "Une réponse raisonnable, bien que vous puissiez faire des suppositions sur les choses dont Nazib Khan veut entendre parler. Peut-être aimerait-il en savoir plus sur votre satisfaction, bonheur et motivation plutôt que systèmes et processus."
+              },
+              {
+                "proposition": "Remerciez M. Khan d'avoir demandé votre avis, mais dites que la réunion a été censé concerner les politiques et procédures de Sutton & Sykes pour tous employés et votre expérience n'est peut-être pas représentative, donc vous préférez ne pas entrer dans trop de détails sur vous-même.",
+                "order": 2,
+                "point": 1,
+                "correction": "C'est la réponse la moins efficace car vous ne répondez pas du tout à la question de M. Khan. intérêt à avoir un point de vue « personnel » sur la question."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+
+  }
+]

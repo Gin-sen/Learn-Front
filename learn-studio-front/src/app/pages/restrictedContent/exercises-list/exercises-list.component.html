@@ -5,36 +5,40 @@
       <div class="boxTitle">
         Liste des exercices
       </div>
-      <div class="listWrapper">
-        <mat-card class="exerciseBox" *ngFor="let exercise of exercises; let index = index">
-          <mat-card-header>
-            <mat-card-title class="exerciseBoxTitle">
-              <div>{{exercise.title}}</div>
-              <div>
-                <button mat-icon-button aria-label="Details" (click)="openDialog(index)">
-                  <mat-icon>more_vert</mat-icon>
-                </button>
-              </div>
+      <div class="theme">
+        <div>Habiletés sociales</div>
+        <div class="listWrapper">
+          <mat-card class="exerciseBox" *ngFor="let exercise of exercises; let index = index">
+            <mat-card-header>
+              <mat-card-title class="exerciseBoxTitle">
+                <div>{{exercise.title}}</div>
+                <div>
+                  <button mat-icon-button aria-label="Details" (click)="openDialog(index)">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                </div>
 
-            </mat-card-title>
-            <mat-card-subtitle >
-              <div>
-                <span *ngFor="let index of [0,1,2,3]">
-                  <mat-icon *ngIf="exercise.maitrise > index + 0.5">star</mat-icon>
-                  <mat-icon *ngIf="exercise.maitrise == index + 0.5">star_half</mat-icon>
-                  <mat-icon *ngIf="exercise.maitrise < index + 0.5">star_border</mat-icon>
+              </mat-card-title>
+              <mat-card-subtitle >
+                <div>
+                <span *ngFor="let index2 of [1,2,3,4]" (click)="maitriseChangeOnClick(index2,index)">
+                  <mat-icon *ngIf="exercise.maitrise >= index2">star</mat-icon>
+                  <!--<mat-icon *ngIf="exercise.maitrise == index2 + 0.5">star_half</mat-icon>-->
+                  <mat-icon *ngIf="exercise.maitrise < index2">star_border</mat-icon>
                 </span>
-              </div>
+                </div>
 
-              {{exercise.maitrise}}pt de difficulté
-            </mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="{{exercise.imageLink !== '' ? exercise.imageLink : './assets/image_not_found.png'}}" alt="{{exercise.imageAlt}}">
-          <mat-card-actions class="buttonCenter">
-            <button mat-button (click)="router.navigate(['learn/exercise', exercise.id])">ACCÈS À L'EXERCICE</button>
-          </mat-card-actions>
-        </mat-card>
+                {{exercise.maitrise}}pt de difficulté
+              </mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="{{exercise.imageLink !== '' ? exercise.imageLink : './assets/image_not_found.png'}}" alt="{{exercise.imageAlt}}">
+            <mat-card-actions class="buttonCenter">
+              <button mat-button (click)="router.navigate(['learn/exercise', exercise.id], {queryParams: {level: exercise.maitrise}})">ACCÈS À L'EXERCICE</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
       </div>
+
     </div>
   </div>
 </div>

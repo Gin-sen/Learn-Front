@@ -36,6 +36,11 @@ export class ExercisesListComponent implements OnInit {
 
   }
 
+  maitriseChangeOnClick(index: number, exerciceIndex : number) {
+    console.log(index);
+    this.exercises[exerciceIndex].maitrise = index;
+  }
+
   openDialog(index: number): void {
     this.dialog.open(ExerciseDetailComponent, {
       data: {

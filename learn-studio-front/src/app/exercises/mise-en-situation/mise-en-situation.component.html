@@ -10,7 +10,9 @@
 
     <div class="restraint_width spaced_paragraph" [innerHTML]="contexte"></div>
     <div class="chrono" *ngIf="printDate">
-      {{timerMin + ":" + timerSec}}
+      {{timerMin < 10 ? '0' + timerMin : timerMin}}
+      {{":"}}
+      {{timerSec < 10 ? '0' + timerSec: timerSec}}
     </div>
 
     <mat-horizontal-stepper>

@@ -9,6 +9,7 @@ import jsonForm from '../../../assets/personnaliteV2.json'
 export class PersonalityFormComponent implements OnInit {
   @Output() close = new EventEmitter<boolean>();
 
+  questionListByFive: number[];
   questionList = jsonForm.questions;
   userAnswer: number[];
   type: any;
@@ -16,6 +17,7 @@ export class PersonalityFormComponent implements OnInit {
 
   constructor() {
     this.userAnswer = [];
+    this.questionListByFive = [];
     this.type = {};
     this.result = false;
   }
@@ -23,7 +25,10 @@ export class PersonalityFormComponent implements OnInit {
   ngOnInit(): void {
     jsonForm.questions.forEach(question => {
       this.userAnswer.push(3);
-    })
+    });
+    for(let i = 0; i < 10; i++) {
+      this.questionListByFive.push(i*5);
+    }
   }
 
 
@@ -42,6 +47,7 @@ export class PersonalityFormComponent implements OnInit {
 
   closeResult(){
     this.result = false;
+    this.close.emit();
   }
 
 }

@@ -179,3 +179,19 @@ div{
   background-color: $shadedBlueTxt;
   color: $shadedBlueLink;
 }
+
+.callToAction9 {
+  background-color: #58a8f5;
+  color: white;
+  border: solid 3px $shadedBlueLink;
+  padding: 0.7rem 0.7rem;
+  border-radius: 25px;
+  font-size: medium;
+  font-weight: normal;
+  margin: 1rem 1rem;
+}
+
+.callToAction9:hover {
+  background-color: $shadedBlueLink;
+  color: $shadedBlueTxt;
+}

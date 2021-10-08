@@ -5,20 +5,87 @@
     </button>
     <div class="header_wrapper">
       <H3>Formulaire de personalité</H3>
-      <ol>
-        <li class="form_line header_line">
-          <div></div>
-          <div class="radio_button_wrapper">
-            <div class="radio">Pas d'accord</div>
-            <div class="radio">Plutôt pas d'accord</div>
-            <div class="radio">Plutôt d'accord</div>
-            <div class="radio">D'accord</div>
+    </div>
+    <div class="scroll_wrapper">
+      <mat-stepper >
+        <mat-step *ngFor="let questionNb of questionListByFive; let index = index">
+          <ng-template matStepLabel>Step {{index + 1}}</ng-template>
+          <div class="matstep_wrapper">
+            <ol>
+              <li class="form_line header_line">
+                <div></div>
+                <div class="radio_button_wrapper">
+                  <div class="radio">Pas d'accord</div>
+                  <div class="radio">Plutôt pas d'accord</div>
+                  <div class="radio">Plutôt d'accord</div>
+                  <div class="radio">D'accord</div>
+                </div>
+              </li>
+            </ol>
+            <div class="form_line">
+              <div>{{questionList[questionNb].intitule}}
+              </div>
+              <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[questionNb]">
+
+                <div class="radio" *ngFor="let answer of questionList[questionNb].answer; let index2 = index" >
+                  <mat-radio-button [value]="index2"></mat-radio-button>
+                </div>
+              </mat-radio-group>
+            </div>
+            <div class="form_line">
+              <div>{{questionList[questionNb + 1].intitule}}
+              </div>
+              <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[questionNb + 1]">
+
+                <div class="radio" *ngFor="let answer of questionList[questionNb + 1].answer; let index2 = index" >
+                  <mat-radio-button [value]="index2"></mat-radio-button>
+                </div>
+              </mat-radio-group>
+            </div>
+            <div class="form_line">
+              <div>{{questionList[questionNb + 2].intitule}}
+              </div>
+              <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[questionNb + 2]">
+
+                <div class="radio" *ngFor="let answer of questionList[questionNb + 2].answer; let index2 = index" >
+                  <mat-radio-button [value]="index2"></mat-radio-button>
+                </div>
+              </mat-radio-group>
+            </div>
+            <div class="form_line">
+              <div>{{questionList[questionNb + 3].intitule}}
+              </div>
+              <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[questionNb + 3]">
+
+                <div class="radio" *ngFor="let answer of questionList[questionNb + 3].answer; let index2 = index" >
+                  <mat-radio-button [value]="index2"></mat-radio-button>
+                </div>
+              </mat-radio-group>
+            </div>
+            <div class="form_line">
+              <div>{{questionList[questionNb + 4].intitule}}
+              </div>
+              <mat-radio-group aria-label="Select an option" class="radio_button_wrapper" [(ngModel)]="userAnswer[questionNb + 4]">
+
+                <div class="radio" *ngFor="let answer of questionList[questionNb + 4].answer; let index2 = index" >
+                  <mat-radio-button [value]="index2"></mat-radio-button>
+                </div>
+              </mat-radio-group>
+            </div>
+
+          <div>
+            <button mat-button matStepperPrevious *ngIf="index>0">Back</button>
+            <button mat-button matStepperNext *ngIf="index < 9">Next</button>
           </div>
-        </li>
-      </ol>
+          <button *ngIf="index == 9" class="button" (click)="printResult()">Obtenir mes résultats</button>
+          </div>
+        </mat-step>
+      </mat-stepper>
+
+
     </div>
 
-    <div class="scroll_wrapper">
+    <!--<div class="scroll_wrapper">
       <ol>
         <li *ngFor="let question of questionList; let index = index" class="form_line">
           <div>
@@ -33,7 +100,7 @@
         </li>
       </ol>
       <button class="button" (click)="printResult()">Obtenir mes résultats</button>
-    </div>
+    </div>-->
   </div>
   <div *ngIf="result">
     <app-personality-form-result (close)="closeResult()" [result]="type"></app-personality-form-result>
